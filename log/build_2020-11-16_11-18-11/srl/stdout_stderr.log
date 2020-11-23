@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/srl/srl.egg-info
+writing ../../build/srl/srl.egg-info/PKG-INFO
+writing dependency_links to ../../build/srl/srl.egg-info/dependency_links.txt
+writing entry points to ../../build/srl/srl.egg-info/entry_points.txt
+writing requirements to ../../build/srl/srl.egg-info/requires.txt
+writing top-level names to ../../build/srl/srl.egg-info/top_level.txt
+writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+reading manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rtos/dev_ws/build/srl/build
+creating /home/rtos/dev_ws/build/srl/build/lib
+creating /home/rtos/dev_ws/build/srl/build/lib/srl
+copying srl/__init__.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+copying srl/mode_manager.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+copying srl/rate_controller.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+running install
+running install_lib
+creating /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+copying /home/rtos/dev_ws/build/srl/build/lib/srl/__init__.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+copying /home/rtos/dev_ws/build/srl/build/lib/srl/mode_manager.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+copying /home/rtos/dev_ws/build/srl/build/lib/srl/rate_controller.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/mode_manager.py to mode_manager.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/rate_controller.py to rate_controller.cpython-38.pyc
+running install_data
+creating /home/rtos/dev_ws/install/srl/share/ament_index
+creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index
+creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages
+copying resource/srl -> /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages
+copying package.xml -> /home/rtos/dev_ws/install/srl/share/srl
+running install_egg_info
+Copying ../../build/srl/srl.egg-info to /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/rtos/dev_ws/build/srl/install.log'

@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000577] (srl) JobQueued: {'identifier': 'srl', 'dependencies': OrderedDict()}
+[0.000610] (scl) JobQueued: {'identifier': 'scl', 'dependencies': OrderedDict([('srl', '/home/rtos/dev_ws/install/srl')])}
+[0.000808] (srl) JobStarted: {'identifier': 'srl'}
+[0.099883] (-) TimerEvent: {}
+[0.200298] (-) TimerEvent: {}
+[0.202058] (srl) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/srl', 'build', '--build-base', '/home/rtos/dev_ws/build/srl/build', 'install', '--prefix', '/home/rtos/dev_ws/install/srl', '--record', '/home/rtos/dev_ws/build/srl/install.log', '--single-version-externally-managed'], 'cwd': '/home/rtos/dev_ws/src/srl', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rtos', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1593', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rtos', 'OLDPWD': '/home/rtos/dev_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1410', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1974', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rtos', 'JOURNAL_STREAM': '9:34722', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rtos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636', 'INVOCATION_ID': 'e65ff092ed7d406a81a658fde48f455d', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rtos/dev_ws/build/srl', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.300401] (-) TimerEvent: {}
+[0.386244] (srl) StdoutLine: {'line': b'running egg_info\n'}
+[0.386612] (srl) StdoutLine: {'line': b'creating ../../build/srl/srl.egg-info\n'}
+[0.386744] (srl) StdoutLine: {'line': b'writing ../../build/srl/srl.egg-info/PKG-INFO\n'}
+[0.386916] (srl) StdoutLine: {'line': b'writing dependency_links to ../../build/srl/srl.egg-info/dependency_links.txt\n'}
+[0.387047] (srl) StdoutLine: {'line': b'writing entry points to ../../build/srl/srl.egg-info/entry_points.txt\n'}
+[0.387182] (srl) StdoutLine: {'line': b'writing requirements to ../../build/srl/srl.egg-info/requires.txt\n'}
+[0.387249] (srl) StdoutLine: {'line': b'writing top-level names to ../../build/srl/srl.egg-info/top_level.txt\n'}
+[0.388079] (srl) StdoutLine: {'line': b"writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'\n"}
+[0.400460] (-) TimerEvent: {}
+[0.418799] (srl) StdoutLine: {'line': b"reading manifest file '../../build/srl/srl.egg-info/SOURCES.txt'\n"}
+[0.419368] (srl) StdoutLine: {'line': b"writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'\n"}
+[0.419500] (srl) StdoutLine: {'line': b'running build\n'}
+[0.419654] (srl) StdoutLine: {'line': b'running build_py\n'}
+[0.419755] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/srl/build\n'}
+[0.419873] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/srl/build/lib\n'}
+[0.419954] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[0.420056] (srl) StdoutLine: {'line': b'copying srl/__init__.py -> /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[0.420119] (srl) StdoutLine: {'line': b'copying srl/mode_manager.py -> /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[0.420177] (srl) StdoutLine: {'line': b'copying srl/rate_controller.py -> /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[0.420235] (srl) StdoutLine: {'line': b'running install\n'}
+[0.420604] (srl) StdoutLine: {'line': b'running install_lib\n'}
+[0.421615] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[0.421719] (srl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/srl/build/lib/srl/__init__.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[0.421826] (srl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/srl/build/lib/srl/mode_manager.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[0.421927] (srl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/srl/build/lib/srl/rate_controller.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[0.422250] (srl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/__init__.py to __init__.cpython-38.pyc\n'}
+[0.423260] (srl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/mode_manager.py to mode_manager.cpython-38.pyc\n'}
+[0.423868] (srl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/rate_controller.py to rate_controller.cpython-38.pyc\n'}
+[0.424243] (srl) StdoutLine: {'line': b'running install_data\n'}
+[0.424716] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/share/ament_index\n'}
+[0.424880] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index\n'}
+[0.425013] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages\n'}
+[0.425086] (srl) StdoutLine: {'line': b'copying resource/srl -> /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages\n'}
+[0.425148] (srl) StdoutLine: {'line': b'copying package.xml -> /home/rtos/dev_ws/install/srl/share/srl\n'}
+[0.425206] (srl) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.426584] (srl) StdoutLine: {'line': b'Copying ../../build/srl/srl.egg-info to /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info\n'}
+[0.427248] (srl) StdoutLine: {'line': b'running install_scripts\n'}
+[0.443493] (srl) StdoutLine: {'line': b"writing list of installed files to '/home/rtos/dev_ws/build/srl/install.log'\n"}
+[0.461780] (srl) CommandEnded: {'returncode': 0}
+[0.472370] (srl) JobEnded: {'identifier': 'srl', 'rc': 0}
+[0.473091] (scl) JobStarted: {'identifier': 'scl'}
+[0.500644] (-) TimerEvent: {}
+[0.600991] (-) TimerEvent: {}
+[0.676298] (scl) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/scl', 'build', '--build-base', '/home/rtos/dev_ws/build/scl/build', 'install', '--prefix', '/home/rtos/dev_ws/install/scl', '--record', '/home/rtos/dev_ws/build/scl/install.log', '--single-version-externally-managed'], 'cwd': '/home/rtos/dev_ws/src/scl', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rtos', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1593', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rtos', 'OLDPWD': '/home/rtos/dev_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1410', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1974', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rtos', 'JOURNAL_STREAM': '9:34722', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rtos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636', 'INVOCATION_ID': 'e65ff092ed7d406a81a658fde48f455d', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rtos/dev_ws/install/srl:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rtos/dev_ws/build/scl', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.701095] (-) TimerEvent: {}
+[0.801369] (-) TimerEvent: {}
+[0.855738] (scl) StdoutLine: {'line': b'running egg_info\n'}
+[0.856219] (scl) StdoutLine: {'line': b'creating ../../build/scl/scl.egg-info\n'}
+[0.856423] (scl) StdoutLine: {'line': b'writing ../../build/scl/scl.egg-info/PKG-INFO\n'}
+[0.856625] (scl) StdoutLine: {'line': b'writing dependency_links to ../../build/scl/scl.egg-info/dependency_links.txt\n'}
+[0.856817] (scl) StdoutLine: {'line': b'writing entry points to ../../build/scl/scl.egg-info/entry_points.txt\n'}
+[0.856983] (scl) StdoutLine: {'line': b'writing requirements to ../../build/scl/scl.egg-info/requires.txt\n'}
+[0.857114] (scl) StdoutLine: {'line': b'writing top-level names to ../../build/scl/scl.egg-info/top_level.txt\n'}
+[0.858044] (scl) StdoutLine: {'line': b"writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'\n"}
+[0.885112] (scl) StdoutLine: {'line': b"reading manifest file '../../build/scl/scl.egg-info/SOURCES.txt'\n"}
+[0.885815] (scl) StdoutLine: {'line': b"writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'\n"}
+[0.886012] (scl) StdoutLine: {'line': b'running build\n'}
+[0.886143] (scl) StdoutLine: {'line': b'running build_py\n'}
+[0.886329] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build\n'}
+[0.886501] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build/lib\n'}
+[0.886648] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.886784] (scl) StdoutLine: {'line': b'copying scl/channel.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.886946] (scl) StdoutLine: {'line': b'copying scl/link.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.887131] (scl) StdoutLine: {'line': b'copying scl/exceptions.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.887279] (scl) StdoutLine: {'line': b'copying scl/sthread.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.887427] (scl) StdoutLine: {'line': b'copying scl/build_unit.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.887556] (scl) StdoutLine: {'line': b'copying scl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.887697] (scl) StdoutLine: {'line': b'copying scl/components.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.887852] (scl) StdoutLine: {'line': b'copying scl/clink.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.888008] (scl) StdoutLine: {'line': b'copying scl/executor.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.888135] (scl) StdoutLine: {'line': b'copying scl/factory.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[0.888321] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[0.888484] (scl) StdoutLine: {'line': b'copying scl/impl/msg_converter.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[0.888644] (scl) StdoutLine: {'line': b'copying scl/impl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[0.888767] (scl) StdoutLine: {'line': b'copying scl/impl/singleton.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[0.889008] (scl) StdoutLine: {'line': b'running install\n'}
+[0.889691] (scl) StdoutLine: {'line': b'running install_lib\n'}
+[0.890508] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.890695] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/channel.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.890896] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/link.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.891055] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/exceptions.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.891207] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/sthread.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.891352] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[0.891496] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/msg_converter.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[0.891688] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[0.891845] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/singleton.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[0.892001] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/build_unit.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.892163] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.892324] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/components.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.892482] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/clink.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.892611] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/executor.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.892734] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/factory.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[0.892938] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/channel.py to channel.cpython-38.pyc\n'}
+[0.894743] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/link.py to link.cpython-38.pyc\n'}
+[0.894991] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/exceptions.py to exceptions.cpython-38.pyc\n'}
+[0.895449] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/sthread.py to sthread.cpython-38.pyc\n'}
+[0.895725] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/msg_converter.py to msg_converter.cpython-38.pyc\n'}
+[0.896783] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/__init__.py to __init__.cpython-38.pyc\n'}
+[0.896981] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/singleton.py to singleton.cpython-38.pyc\n'}
+[0.897242] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/build_unit.py to build_unit.cpython-38.pyc\n'}
+[0.897696] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/__init__.py to __init__.cpython-38.pyc\n'}
+[0.897901] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/components.py to components.cpython-38.pyc\n'}
+[0.899863] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/clink.py to clink.cpython-38.pyc\n'}
+[0.900554] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/executor.py to executor.cpython-38.pyc\n'}
+[0.900917] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/factory.py to factory.cpython-38.pyc\n'}
+[0.901213] (scl) StdoutLine: {'line': b'running install_data\n'}
+[0.901434] (-) TimerEvent: {}
+[0.901691] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/share/ament_index\n'}
+[0.901889] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index\n'}
+[0.902059] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages\n'}
+[0.902219] (scl) StdoutLine: {'line': b'copying resource/scl -> /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages\n'}
+[0.902345] (scl) StdoutLine: {'line': b'copying package.xml -> /home/rtos/dev_ws/install/scl/share/scl\n'}
+[0.902468] (scl) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.903426] (scl) StdoutLine: {'line': b'Copying ../../build/scl/scl.egg-info to /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info\n'}
+[0.904194] (scl) StdoutLine: {'line': b'running install_scripts\n'}
+[0.918894] (scl) StdoutLine: {'line': b"writing list of installed files to '/home/rtos/dev_ws/build/scl/install.log'\n"}
+[0.938017] (scl) CommandEnded: {'returncode': 0}
+[0.943601] (scl) JobEnded: {'identifier': 'scl', 'rc': 0}
+[0.944157] (-) EventReactorShutdown: {}

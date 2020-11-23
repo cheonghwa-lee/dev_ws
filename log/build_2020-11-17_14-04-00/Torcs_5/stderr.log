@@ -1,0 +1,5 @@
+  File "/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/source_linear_x.py", line 27
+    self.write("source_x, new_msg)
+                                 ^
+SyntaxError: EOL while scanning string literal
+

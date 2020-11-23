@@ -1,0 +1,20 @@
+[0.227s] Invoking command in '/home/rtos/dev_ws/src/srl': CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/srl build --build-base /home/rtos/dev_ws/build/srl/build install --prefix /home/rtos/dev_ws/install/srl --record /home/rtos/dev_ws/build/srl/install.log --single-version-externally-managed
+[0.415s] running egg_info
+[0.416s] writing ../../build/srl/srl.egg-info/PKG-INFO
+[0.416s] writing dependency_links to ../../build/srl/srl.egg-info/dependency_links.txt
+[0.416s] writing entry points to ../../build/srl/srl.egg-info/entry_points.txt
+[0.416s] writing requirements to ../../build/srl/srl.egg-info/requires.txt
+[0.416s] writing top-level names to ../../build/srl/srl.egg-info/top_level.txt
+[0.447s] reading manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+[0.448s] writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+[0.448s] running build
+[0.448s] running build_py
+[0.448s] running install
+[0.449s] running install_lib
+[0.450s] running install_data
+[0.451s] running install_egg_info
+[0.452s] removing '/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info' (and everything under it)
+[0.453s] Copying ../../build/srl/srl.egg-info to /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info
+[0.453s] running install_scripts
+[0.469s] writing list of installed files to '/home/rtos/dev_ws/build/srl/install.log'
+[0.489s] Invoked command in '/home/rtos/dev_ws/src/srl' returned '0': CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/srl build --build-base /home/rtos/dev_ws/build/srl/build install --prefix /home/rtos/dev_ws/install/srl --record /home/rtos/dev_ws/build/srl/install.log --single-version-externally-managed

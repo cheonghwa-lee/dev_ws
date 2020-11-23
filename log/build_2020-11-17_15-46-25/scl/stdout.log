@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/scl/scl.egg-info/PKG-INFO
+writing dependency_links to ../../build/scl/scl.egg-info/dependency_links.txt
+writing entry points to ../../build/scl/scl.egg-info/entry_points.txt
+writing requirements to ../../build/scl/scl.egg-info/requires.txt
+writing top-level names to ../../build/scl/scl.egg-info/top_level.txt
+reading manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+running build
+running build_py
+copying scl/clink.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+running install
+running install_lib
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/clink.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/clink.py to clink.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/scl/scl.egg-info to /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/rtos/dev_ws/build/scl/install.log'

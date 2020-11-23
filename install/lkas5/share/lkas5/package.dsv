@@ -1,0 +1,6 @@
+source;share/lkas5/hook/pythonpath.ps1
+source;share/lkas5/hook/pythonpath.dsv
+source;share/lkas5/hook/pythonpath.sh
+source;share/lkas5/hook/ament_prefix_path.ps1
+source;share/lkas5/hook/ament_prefix_path.dsv
+source;share/lkas5/hook/ament_prefix_path.sh

@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/srl/srl.egg-info/PKG-INFO
+writing dependency_links to ../../build/srl/srl.egg-info/dependency_links.txt
+writing entry points to ../../build/srl/srl.egg-info/entry_points.txt
+writing requirements to ../../build/srl/srl.egg-info/requires.txt
+writing top-level names to ../../build/srl/srl.egg-info/top_level.txt
+reading manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+running build
+running build_py
+copying srl/mode_manager.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+running install
+running install_lib
+copying /home/rtos/dev_ws/build/srl/build/lib/srl/mode_manager.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/mode_manager.py to mode_manager.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/srl/srl.egg-info to /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/rtos/dev_ws/build/srl/install.log'

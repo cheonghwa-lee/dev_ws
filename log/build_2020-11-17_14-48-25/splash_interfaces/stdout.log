@@ -1,0 +1,306 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found std_msgs: 2.0.3 (/opt/ros/foxy/share/std_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") 
+-- Found ament_cmake_ros: 0.9.0 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.5", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rtos/dev_ws/build/splash_interfaces
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target splash_interfaces__cpp[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_generator_c[0m
+[  3%] Built target splash_interfaces__cpp
+[  5%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/srv/detail/request_mode_change__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/srv/detail/register_mode__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/srv/detail/unregister_mode__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/msg/detail/splash_message__functions.c.o[0m
+[ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 18%] [32m[1mLinking C shared library libsplash_interfaces__rosidl_generator_c.so[0m
+[ 18%] Built target splash_interfaces__rosidl_generator_c
+[ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_cpp[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_introspection_cpp[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/srv/register_mode__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/srv/request_mode_change__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/msg/splash_message__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/srv/unregister_mode__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/srv/detail/request_mode_change__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_c[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/srv/request_mode_change__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/srv/register_mode__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/srv/detail/dds_fastrtps/request_mode_change__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_introspection_c[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/srv/detail/dds_fastrtps/register_mode__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/srv/unregister_mode__type_support.cpp.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/srv/detail/request_mode_change__type_support.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/srv/detail/register_mode__type_support.c.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/msg/splash_message__type_support.cpp.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/srv/detail/unregister_mode__type_support.c.o[0m
+[ 49%] [32m[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_c.so[0m
+[ 50%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/msg/detail/splash_message__type_support.c.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/srv/detail/register_mode__type_support.cpp.o[0m
+[ 52%] Built target splash_interfaces__rosidl_typesupport_c
+[ 54%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/srv/detail/unregister_mode__type_support.cpp.o[0m
+[ 56%] [32m[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_cpp.so[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/msg/detail/splash_message__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/srv/detail/dds_fastrtps/unregister_mode__type_support.cpp.o[0m
+[ 61%] [32m[1mLinking C shared library libsplash_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/msg/detail/dds_fastrtps/splash_message__type_support.cpp.o[0m
+[ 63%] Built target splash_interfaces__rosidl_typesupport_cpp
+[ 63%] Built target splash_interfaces__rosidl_typesupport_introspection_c
+[ 65%] [32m[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 65%] Built target splash_interfaces__rosidl_typesupport_introspection_cpp
+[ 67%] [32m[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 67%] Built target splash_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 69%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_fastrtps_c[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/srv/detail/request_mode_change__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/srv/detail/unregister_mode__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/srv/detail/register_mode__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/msg/detail/splash_message__type_support_c.cpp.o[0m
+[ 78%] [32m[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 78%] Built target splash_interfaces__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target splash_interfaces[0m
+[ 78%] Built target splash_interfaces
+[35m[1mScanning dependencies of target splash_interfaces__py[0m
+[ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 80%] Built target splash_interfaces__py
+[35m[1mScanning dependencies of target splash_interfaces__python[0m
+[ 81%] [32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/srv/_request_mode_change_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/srv/_register_mode_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/srv/_unregister_mode_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/msg/_splash_message_s.c.o[0m
+[ 89%] [32m[1mLinking C shared library rosidl_generator_py/splash_interfaces/libsplash_interfaces__python.so[0m
+[ 89%] Built target splash_interfaces__python
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 90%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/splash_interfaces/_splash_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/splash_interfaces/_splash_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/splash_interfaces/_splash_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/splash_interfaces/splash_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking CXX shared library rosidl_generator_py/splash_interfaces/splash_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/splash_interfaces/splash_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] Built target splash_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target splash_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target splash_interfaces__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/rosidl_interfaces/splash_interfaces
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__functions.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__struct.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__type_support.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__functions.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/splash_message.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__functions.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__type_support.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__functions.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__type_support.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__struct.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__functions.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__type_support.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__struct.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__struct.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__functions.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__functions.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__functions.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/unregister_mode.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/register_mode.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/request_mode_change.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/library_path.sh
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/library_path.dsv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/dds_fastrtps
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/dds_fastrtps
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__type_support.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__type_support.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__type_support.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__type_support.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__traits.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__struct.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__builder.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/splash_message.hpp
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__struct.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__traits.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__struct.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__traits.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__traits.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__struct.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__builder.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__builder.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__builder.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/request_mode_change.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/register_mode.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/unregister_mode.hpp
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__type_support.cpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv
+-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__type_support.cpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__type_support.cpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__type_support.cpp
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/pythonpath.sh
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/pythonpath.dsv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/__init__.py
+Compiling '/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/__init__.py'...
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_register_mode_s.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_request_mode_change_s.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/__init__.py
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_request_mode_change.py
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_register_mode.py
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_unregister_mode.py
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_unregister_mode_s.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg/_splash_message.py
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg/__init__.py
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg/_splash_message_s.c
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__python.so
+-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__python.so" to ""
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange.idl
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode.idl
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode.idl
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/msg/SplashMessage.idl
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange.srv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange_Request.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange_Response.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode.srv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode_Request.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode_Response.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode.srv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode_Request.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode_Response.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/msg/SplashMessage.msg
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/package_run_dependencies/splash_interfaces
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/parent_prefix_path/splash_interfaces
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/ament_prefix_path.dsv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/path.sh
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/path.dsv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.bash
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.sh
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.zsh
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.dsv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.dsv
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/packages/splash_interfaces
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfacesConfig.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfacesConfig-version.cmake
+-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.xml

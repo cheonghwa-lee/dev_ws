@@ -1,0 +1,35 @@
+[0.241s] Invoking command in '/home/rtos/dev_ws/src/ros2-torcs-client': PYTHONPATH=/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/torcs_client build --build-base /home/rtos/dev_ws/build/torcs_client/build install --prefix /home/rtos/dev_ws/install/torcs_client --record /home/rtos/dev_ws/build/torcs_client/install.log --single-version-externally-managed
+[0.434s] running egg_info
+[0.434s] writing ../../build/torcs_client/torcs_client.egg-info/PKG-INFO
+[0.435s] writing dependency_links to ../../build/torcs_client/torcs_client.egg-info/dependency_links.txt
+[0.435s] writing entry points to ../../build/torcs_client/torcs_client.egg-info/entry_points.txt
+[0.435s] writing requirements to ../../build/torcs_client/torcs_client.egg-info/requires.txt
+[0.435s] writing top-level names to ../../build/torcs_client/torcs_client.egg-info/top_level.txt
+[0.482s] reading manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'
+[0.483s] writing manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'
+[0.483s] running build
+[0.484s] running build_py
+[0.484s] copying torcs_client/torcs_client.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.484s] copying torcs_client/__init__.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.484s] copying torcs_client/main.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.485s] copying torcs_client/simple_parser.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.485s] running install
+[0.486s] running install_lib
+[0.487s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/torcs_client.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.487s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/__init__.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.488s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/main.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.488s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/simple_parser.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.488s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/torcs_client.py to torcs_client.cpython-38.pyc
+[0.492s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/__init__.py to __init__.cpython-38.pyc
+[0.492s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/main.py to main.cpython-38.pyc
+[0.492s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/simple_parser.py to simple_parser.cpython-38.pyc
+[0.493s] running install_data
+[0.493s] copying resource/torcs_client -> /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index/packages
+[0.493s] copying package.xml -> /home/rtos/dev_ws/install/torcs_client/share/torcs_client
+[0.494s] running install_egg_info
+[0.496s] removing '/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client-0.0.0-py3.8.egg-info' (and everything under it)
+[0.496s] Copying ../../build/torcs_client/torcs_client.egg-info to /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client-0.0.0-py3.8.egg-info
+[0.497s] running install_scripts
+[0.516s] Installing main script to /home/rtos/dev_ws/install/torcs_client/lib/torcs_client
+[0.516s] writing list of installed files to '/home/rtos/dev_ws/build/torcs_client/install.log'
+[0.540s] Invoked command in '/home/rtos/dev_ws/src/ros2-torcs-client' returned '0': PYTHONPATH=/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/torcs_client build --build-base /home/rtos/dev_ws/build/torcs_client/build install --prefix /home/rtos/dev_ws/install/torcs_client --record /home/rtos/dev_ws/build/torcs_client/install.log --single-version-externally-managed

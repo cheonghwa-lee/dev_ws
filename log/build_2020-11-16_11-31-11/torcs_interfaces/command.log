@@ -1,0 +1,6 @@
+Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/torcs_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/torcs_interfaces
+Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/torcs_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/torcs_interfaces
+Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/torcs_interfaces -- -j8 -l8
+Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/torcs_interfaces -- -j8 -l8
+Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/torcs_interfaces
+Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/torcs_interfaces

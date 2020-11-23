@@ -1,0 +1,100 @@
+[0.425s] Invoking command in '/home/rtos/dev_ws/src/Torcs_5': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/Torcs_5 build --build-base /home/rtos/dev_ws/build/Torcs_5/build install --prefix /home/rtos/dev_ws/install/Torcs_5 --record /home/rtos/dev_ws/build/Torcs_5/install.log --single-version-externally-managed
+[0.617s] running egg_info
+[0.617s] creating ../../build/Torcs_5/Torcs_5.egg-info
+[0.617s] writing ../../build/Torcs_5/Torcs_5.egg-info/PKG-INFO
+[0.618s] writing dependency_links to ../../build/Torcs_5/Torcs_5.egg-info/dependency_links.txt
+[0.618s] writing entry points to ../../build/Torcs_5/Torcs_5.egg-info/entry_points.txt
+[0.618s] writing requirements to ../../build/Torcs_5/Torcs_5.egg-info/requires.txt
+[0.618s] writing top-level names to ../../build/Torcs_5/Torcs_5.egg-info/top_level.txt
+[0.619s] writing manifest file '../../build/Torcs_5/Torcs_5.egg-info/SOURCES.txt'
+[0.649s] reading manifest file '../../build/Torcs_5/Torcs_5.egg-info/SOURCES.txt'
+[0.650s] writing manifest file '../../build/Torcs_5/Torcs_5.egg-info/SOURCES.txt'
+[0.650s] running build
+[0.650s] running build_py
+[0.650s] creating /home/rtos/dev_ws/build/Torcs_5/build
+[0.650s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib
+[0.650s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5
+[0.651s] copying Torcs_5/__init__.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5
+[0.651s] copying Torcs_5/default_build_unit_exec.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5
+[0.651s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash
+[0.651s] copying Torcs_5/splash/__init__.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash
+[0.651s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.651s] copying Torcs_5/splash/component/processing_component_2.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.652s] copying Torcs_5/splash/component/processing_component_1.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.652s] copying Torcs_5/splash/component/source_angle_z.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.652s] copying Torcs_5/splash/component/fusion_1.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.652s] copying Torcs_5/splash/component/sink_steer.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.652s] copying Torcs_5/splash/component/__init__.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.653s] copying Torcs_5/splash/component/source_linear_x.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.653s] copying Torcs_5/splash/component/processing_key.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.653s] copying Torcs_5/splash/component/processing_pass.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.653s] copying Torcs_5/splash/component/source_distance_mid.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.653s] copying Torcs_5/splash/component/sink_accel.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+[0.653s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/stream_port
+[0.654s] copying Torcs_5/splash/stream_port/__init__.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/stream_port
+[0.654s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/factory
+[0.654s] copying Torcs_5/splash/factory/__init__.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/factory
+[0.654s] copying Torcs_5/splash/factory/factory_0.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/factory
+[0.654s] creating /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/build_unit
+[0.655s] copying Torcs_5/splash/build_unit/default_build_unit.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/build_unit
+[0.655s] copying Torcs_5/splash/build_unit/__init__.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/build_unit
+[0.656s] running install
+[0.657s] running install_lib
+[0.658s] creating /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5
+[0.658s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/__init__.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5
+[0.658s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/default_build_unit_exec.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5
+[0.659s] creating /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash
+[0.659s] creating /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.659s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_component_2.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.659s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_component_1.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.660s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/source_angle_z.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.660s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/fusion_1.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.660s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/sink_steer.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.660s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/__init__.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.661s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/source_linear_x.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.661s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_key.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.661s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_pass.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.662s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/source_distance_mid.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.662s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/sink_accel.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+[0.662s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/__init__.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash
+[0.662s] creating /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/stream_port
+[0.662s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/stream_port/__init__.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/stream_port
+[0.662s] creating /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/factory
+[0.663s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/factory/__init__.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/factory
+[0.663s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/factory/factory_0.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/factory
+[0.663s] creating /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/build_unit
+[0.663s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/build_unit/default_build_unit.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/build_unit
+[0.663s] copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/build_unit/__init__.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/build_unit
+[0.663s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/__init__.py to __init__.cpython-38.pyc
+[0.663s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/default_build_unit_exec.py to default_build_unit_exec.cpython-38.pyc
+[0.664s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_component_2.py to processing_component_2.cpython-38.pyc
+[0.664s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_component_1.py to processing_component_1.cpython-38.pyc
+[0.664s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/source_angle_z.py to source_angle_z.cpython-38.pyc
+[0.665s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/fusion_1.py to fusion_1.cpython-38.pyc
+[0.666s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/sink_steer.py to sink_steer.cpython-38.pyc
+[0.666s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/__init__.py to __init__.cpython-38.pyc
+[0.667s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/source_linear_x.py to source_linear_x.cpython-38.pyc
+[0.667s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_key.py to processing_key.cpython-38.pyc
+[0.668s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_pass.py to processing_pass.cpython-38.pyc
+[0.668s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/source_distance_mid.py to source_distance_mid.cpython-38.pyc
+[0.668s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/sink_accel.py to sink_accel.cpython-38.pyc
+[0.669s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/__init__.py to __init__.cpython-38.pyc
+[0.669s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/stream_port/__init__.py to __init__.cpython-38.pyc
+[0.669s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/factory/__init__.py to __init__.cpython-38.pyc
+[0.669s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/factory/factory_0.py to factory_0.cpython-38.pyc
+[0.669s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/build_unit/default_build_unit.py to default_build_unit.cpython-38.pyc
+[0.670s] byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/build_unit/__init__.py to __init__.cpython-38.pyc
+[0.670s] running install_data
+[0.670s] creating /home/rtos/dev_ws/install/Torcs_5/share/ament_index
+[0.670s] creating /home/rtos/dev_ws/install/Torcs_5/share/ament_index/resource_index
+[0.670s] creating /home/rtos/dev_ws/install/Torcs_5/share/ament_index/resource_index/packages
+[0.671s] copying resource/Torcs_5 -> /home/rtos/dev_ws/install/Torcs_5/share/ament_index/resource_index/packages
+[0.671s] copying package.xml -> /home/rtos/dev_ws/install/Torcs_5/share/Torcs_5
+[0.671s] copying launch/splash.launch.py -> /home/rtos/dev_ws/install/Torcs_5/share/Torcs_5
+[0.671s] running install_egg_info
+[0.672s] Copying ../../build/Torcs_5/Torcs_5.egg-info to /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5-0.0.0-py3.8.egg-info
+[0.672s] running install_scripts
+[0.686s] Installing default_build_unit script to /home/rtos/dev_ws/install/Torcs_5/lib/Torcs_5
+[0.686s] Installing splash_server script to /home/rtos/dev_ws/install/Torcs_5/lib/Torcs_5
+[0.686s] writing list of installed files to '/home/rtos/dev_ws/build/Torcs_5/install.log'
+[0.713s] Invoked command in '/home/rtos/dev_ws/src/Torcs_5' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/Torcs_5 build --build-base /home/rtos/dev_ws/build/Torcs_5/build install --prefix /home/rtos/dev_ws/install/Torcs_5 --record /home/rtos/dev_ws/build/Torcs_5/install.log --single-version-externally-managed

@@ -1,0 +1,71 @@
+[0.225s] Invoking command in '/home/rtos/dev_ws/src/scl': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/scl build --build-base /home/rtos/dev_ws/build/scl/build install --prefix /home/rtos/dev_ws/install/scl --record /home/rtos/dev_ws/build/scl/install.log --single-version-externally-managed
+[0.421s] running egg_info
+[0.422s] creating ../../build/scl/scl.egg-info
+[0.422s] writing ../../build/scl/scl.egg-info/PKG-INFO
+[0.422s] writing dependency_links to ../../build/scl/scl.egg-info/dependency_links.txt
+[0.422s] writing entry points to ../../build/scl/scl.egg-info/entry_points.txt
+[0.422s] writing requirements to ../../build/scl/scl.egg-info/requires.txt
+[0.423s] writing top-level names to ../../build/scl/scl.egg-info/top_level.txt
+[0.424s] writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+[0.453s] reading manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+[0.454s] writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+[0.454s] running build
+[0.454s] running build_py
+[0.454s] creating /home/rtos/dev_ws/build/scl/build
+[0.454s] creating /home/rtos/dev_ws/build/scl/build/lib
+[0.454s] creating /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.454s] copying scl/channel.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.454s] copying scl/link.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.454s] copying scl/exceptions.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.455s] copying scl/sthread.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.455s] copying scl/build_unit.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.455s] copying scl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.455s] copying scl/components.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.455s] copying scl/clink.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.455s] copying scl/executor.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.456s] copying scl/factory.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.456s] creating /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+[0.456s] copying scl/impl/msg_converter.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+[0.456s] copying scl/impl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+[0.456s] copying scl/impl/singleton.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+[0.457s] running install
+[0.458s] running install_lib
+[0.459s] creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.459s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/channel.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.459s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/link.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.459s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/exceptions.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/sthread.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.460s] creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/msg_converter.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/singleton.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/build_unit.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.460s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/components.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.461s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/clink.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.461s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/executor.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.461s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/factory.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.461s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/channel.py to channel.cpython-38.pyc
+[0.465s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/link.py to link.cpython-38.pyc
+[0.465s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/exceptions.py to exceptions.cpython-38.pyc
+[0.465s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/sthread.py to sthread.cpython-38.pyc
+[0.466s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/msg_converter.py to msg_converter.cpython-38.pyc
+[0.467s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/__init__.py to __init__.cpython-38.pyc
+[0.467s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/singleton.py to singleton.cpython-38.pyc
+[0.468s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/build_unit.py to build_unit.cpython-38.pyc
+[0.468s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/__init__.py to __init__.cpython-38.pyc
+[0.469s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/components.py to components.cpython-38.pyc
+[0.471s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/clink.py to clink.cpython-38.pyc
+[0.471s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/executor.py to executor.cpython-38.pyc
+[0.472s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/factory.py to factory.cpython-38.pyc
+[0.472s] running install_data
+[0.473s] creating /home/rtos/dev_ws/install/scl/share/ament_index
+[0.473s] creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index
+[0.473s] creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages
+[0.473s] copying resource/scl -> /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages
+[0.473s] copying package.xml -> /home/rtos/dev_ws/install/scl/share/scl
+[0.473s] running install_egg_info
+[0.474s] Copying ../../build/scl/scl.egg-info to /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info
+[0.475s] running install_scripts
+[0.490s] writing list of installed files to '/home/rtos/dev_ws/build/scl/install.log'
+[0.510s] Invoked command in '/home/rtos/dev_ws/src/scl' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/scl build --build-base /home/rtos/dev_ws/build/scl/build install --prefix /home/rtos/dev_ws/install/scl --record /home/rtos/dev_ws/build/scl/install.log --single-version-externally-managed

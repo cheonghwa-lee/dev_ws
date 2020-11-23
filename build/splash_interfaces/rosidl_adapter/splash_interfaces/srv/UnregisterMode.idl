@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from splash_interfaces/srv/UnregisterMode.srv
+// generated code does not contain a copyright notice
+
+
+module splash_interfaces {
+  module srv {
+    struct UnregisterMode_Request {
+      string factory;
+    };
+    struct UnregisterMode_Response {
+      boolean ok;
+    };
+  };
+};

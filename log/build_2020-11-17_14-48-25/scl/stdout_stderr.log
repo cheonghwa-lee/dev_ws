@@ -1,0 +1,69 @@
+running egg_info
+creating ../../build/scl/scl.egg-info
+writing ../../build/scl/scl.egg-info/PKG-INFO
+writing dependency_links to ../../build/scl/scl.egg-info/dependency_links.txt
+writing entry points to ../../build/scl/scl.egg-info/entry_points.txt
+writing requirements to ../../build/scl/scl.egg-info/requires.txt
+writing top-level names to ../../build/scl/scl.egg-info/top_level.txt
+writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+reading manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rtos/dev_ws/build/scl/build
+creating /home/rtos/dev_ws/build/scl/build/lib
+creating /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/channel.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/link.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/exceptions.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/sthread.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/build_unit.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/components.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/clink.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/executor.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+copying scl/factory.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+creating /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+copying scl/impl/msg_converter.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+copying scl/impl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+copying scl/impl/singleton.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl
+running install
+running install_lib
+creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/channel.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/link.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/exceptions.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/sthread.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/msg_converter.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/singleton.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/build_unit.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/components.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/clink.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/executor.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+copying /home/rtos/dev_ws/build/scl/build/lib/scl/factory.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/channel.py to channel.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/link.py to link.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/exceptions.py to exceptions.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/sthread.py to sthread.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/msg_converter.py to msg_converter.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/singleton.py to singleton.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/build_unit.py to build_unit.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/components.py to components.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/clink.py to clink.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/executor.py to executor.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/factory.py to factory.cpython-38.pyc
+running install_data
+creating /home/rtos/dev_ws/install/scl/share/ament_index
+creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index
+creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages
+copying resource/scl -> /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages
+copying package.xml -> /home/rtos/dev_ws/install/scl/share/scl
+running install_egg_info
+Copying ../../build/scl/scl.egg-info to /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/rtos/dev_ws/build/scl/install.log'

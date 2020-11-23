@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/lkas4/lkas4.egg-info/PKG-INFO
+writing dependency_links to ../../build/lkas4/lkas4.egg-info/dependency_links.txt
+writing entry points to ../../build/lkas4/lkas4.egg-info/entry_points.txt
+writing requirements to ../../build/lkas4/lkas4.egg-info/requires.txt
+writing top-level names to ../../build/lkas4/lkas4.egg-info/top_level.txt
+reading manifest file '../../build/lkas4/lkas4.egg-info/SOURCES.txt'
+writing manifest file '../../build/lkas4/lkas4.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages/lkas4-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/lkas4/lkas4.egg-info to /home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages/lkas4-0.0.0-py3.8.egg-info
+running install_scripts
+Installing default_build_unit script to /home/rtos/dev_ws/install/lkas4/lib/lkas4
+Installing splash_server script to /home/rtos/dev_ws/install/lkas4/lib/lkas4
+writing list of installed files to '/home/rtos/dev_ws/build/lkas4/install.log'

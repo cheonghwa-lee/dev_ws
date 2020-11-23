@@ -1,0 +1,550 @@
+[0.135s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.135s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7c411ed9d0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7c411ed9d0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7c411edf40>)
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.140s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rtos/dev_ws'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/Torcs_5) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Torcs_5' with type 'ros.ament_python' and name 'Torcs_5'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas4) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lkas4' with type 'ros.ament_python' and name 'lkas4'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/lkas5) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lkas5' with type 'ros.ament_python' and name 'lkas5'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-torcs-client) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2-torcs-client' with type 'ros.ament_python' and name 'torcs_client'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/scl) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scl' with type 'ros.ament_python' and name 'scl'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/splash_interfaces) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/splash_interfaces' with type 'ros.ament_cmake' and name 'splash_interfaces'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/srl) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/srl' with type 'ros.ament_python' and name 'srl'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/torcs_interfaces) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/torcs_interfaces' with type 'ros.ament_cmake' and name 'torcs_interfaces'
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'splash_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'splash_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/splash_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/splash_interfaces', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/splash_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'torcs_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'torcs_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/torcs_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/torcs_interfaces', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/torcs_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'srl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'srl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/srl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/srl', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/srl', 'symlink_install': False, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'torcs_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'torcs_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/torcs_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/torcs_client', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/ros2-torcs-client', 'symlink_install': False, 'test_result_base': None}
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'cmake_target' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'cmake_clean_cache' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'cmake_clean_first' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'cmake_force_configure' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'ament_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'catkin_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'scl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.190s] DEBUG:colcon.colcon_core.verb:Building package 'scl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/scl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/scl', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/scl', 'symlink_install': False, 'test_result_base': None}
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'cmake_target' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'cmake_clean_cache' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'cmake_clean_first' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'cmake_force_configure' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'Torcs_5' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'Torcs_5' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/Torcs_5', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/Torcs_5', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/Torcs_5', 'symlink_install': False, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'lkas4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'lkas4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/lkas4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/lkas4', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/lkas4', 'symlink_install': False, 'test_result_base': None}
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'lkas5' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.197s] DEBUG:colcon.colcon_core.verb:Building package 'lkas5' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rtos/dev_ws/build/lkas5', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rtos/dev_ws/install/lkas5', 'merge_install': False, 'path': '/home/rtos/dev_ws/src/lkas5', 'symlink_install': False, 'test_result_base': None}
+[0.197s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.199s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.199s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rtos/dev_ws/src/splash_interfaces' with build type 'ament_cmake'
+[0.199s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rtos/dev_ws/src/splash_interfaces'
+[0.203s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.203s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/lkas4' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/Torcs_5' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/torcs_client' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/torcs_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/lkas5' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/scl' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/srl' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rtos/dev_ws/install/splash_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/rtos/dev_ws/install/torcs_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.205s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/rtos/dev_ws/install/splash_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.205s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rtos/dev_ws/src/torcs_interfaces' with build type 'ament_cmake'
+[0.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rtos/dev_ws/src/torcs_interfaces'
+[0.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.210s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/build/splash_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/splash_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/splash_interfaces
+[0.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/torcs_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/torcs_interfaces
+[1.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/torcs_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/torcs_interfaces
+[1.716s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/torcs_interfaces -- -j8 -l8
+[1.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/build/splash_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/splash_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/splash_interfaces
+[1.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/build/splash_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/splash_interfaces -- -j8 -l8
+[7.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/build/splash_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/splash_interfaces -- -j8 -l8
+[7.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/build/splash_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/splash_interfaces
+[7.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(splash_interfaces)
+[7.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/build/splash_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/splash_interfaces
+[7.493s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces' for CMake module files
+[7.493s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces' for CMake config files
+[7.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('splash_interfaces', 'cmake_prefix_path')
+[7.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/cmake_prefix_path.ps1'
+[7.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/cmake_prefix_path.dsv'
+[7.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/cmake_prefix_path.sh'
+[7.497s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/lib'
+[7.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('splash_interfaces', 'ld_library_path_lib')
+[7.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/ld_library_path_lib.ps1'
+[7.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/ld_library_path_lib.dsv'
+[7.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/ld_library_path_lib.sh'
+[7.498s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/bin'
+[7.498s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/lib/pkgconfig/splash_interfaces.pc'
+[7.498s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages'
+[7.498s] Level 1:colcon.colcon_core.shell:create_environment_hook('splash_interfaces', 'pythonpath')
+[7.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/pythonpath.ps1'
+[7.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/pythonpath.dsv'
+[7.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/pythonpath.sh'
+[7.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.ps1'
+[7.501s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.dsv'
+[7.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.sh'
+[7.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.bash'
+[7.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.zsh'
+[7.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/splash_interfaces/share/colcon-core/packages/splash_interfaces)
+[7.585s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(splash_interfaces)
+[7.586s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces' for CMake module files
+[7.587s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces' for CMake config files
+[7.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('splash_interfaces', 'cmake_prefix_path')
+[7.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/cmake_prefix_path.ps1'
+[7.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/cmake_prefix_path.dsv'
+[7.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/cmake_prefix_path.sh'
+[7.589s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/lib'
+[7.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('splash_interfaces', 'ld_library_path_lib')
+[7.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/ld_library_path_lib.ps1'
+[7.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/ld_library_path_lib.dsv'
+[7.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/ld_library_path_lib.sh'
+[7.592s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/bin'
+[7.592s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/lib/pkgconfig/splash_interfaces.pc'
+[7.592s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages'
+[7.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('splash_interfaces', 'pythonpath')
+[7.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/pythonpath.ps1'
+[7.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/pythonpath.dsv'
+[7.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/hook/pythonpath.sh'
+[7.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.ps1'
+[7.595s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.dsv'
+[7.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.sh'
+[7.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.bash'
+[7.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.zsh'
+[7.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/splash_interfaces/share/colcon-core/packages/splash_interfaces)
+[7.597s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rtos/dev_ws/src/srl' with build type 'ament_python'
+[7.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('srl', 'ament_prefix_path')
+[7.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/srl/share/srl/hook/ament_prefix_path.ps1'
+[7.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/srl/share/srl/hook/ament_prefix_path.dsv'
+[7.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/srl/share/srl/hook/ament_prefix_path.sh'
+[7.599s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.599s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.601s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.800s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rtos/dev_ws/src/srl'
+[7.801s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.801s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.803s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/torcs_interfaces -- -j8 -l8
+[7.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/src/srl': CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/srl build --build-base /home/rtos/dev_ws/build/srl/build install --prefix /home/rtos/dev_ws/install/srl --record /home/rtos/dev_ws/build/srl/install.log --single-version-externally-managed
+[7.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/torcs_interfaces
+[7.926s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(torcs_interfaces)
+[7.928s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces' for CMake module files
+[7.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/torcs_interfaces
+[7.930s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces' for CMake config files
+[7.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_interfaces', 'cmake_prefix_path')
+[7.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/cmake_prefix_path.ps1'
+[7.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/cmake_prefix_path.dsv'
+[7.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/cmake_prefix_path.sh'
+[7.933s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/lib'
+[7.933s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_interfaces', 'ld_library_path_lib')
+[7.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/ld_library_path_lib.ps1'
+[7.934s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/ld_library_path_lib.dsv'
+[7.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/ld_library_path_lib.sh'
+[7.935s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/bin'
+[7.935s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/lib/pkgconfig/torcs_interfaces.pc'
+[7.935s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages'
+[7.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_interfaces', 'pythonpath')
+[7.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/pythonpath.ps1'
+[7.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/pythonpath.dsv'
+[7.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/pythonpath.sh'
+[7.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.ps1'
+[7.939s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.dsv'
+[7.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.sh'
+[7.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.bash'
+[7.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.zsh'
+[7.941s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/torcs_interfaces/share/colcon-core/packages/torcs_interfaces)
+[7.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(torcs_interfaces)
+[7.994s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces' for CMake module files
+[7.995s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces' for CMake config files
+[7.996s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_interfaces', 'cmake_prefix_path')
+[7.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/cmake_prefix_path.ps1'
+[7.997s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/cmake_prefix_path.dsv'
+[7.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/cmake_prefix_path.sh'
+[7.999s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/lib'
+[7.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_interfaces', 'ld_library_path_lib')
+[8.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/ld_library_path_lib.ps1'
+[8.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/ld_library_path_lib.dsv'
+[8.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/ld_library_path_lib.sh'
+[8.001s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/bin'
+[8.001s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/lib/pkgconfig/torcs_interfaces.pc'
+[8.001s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages'
+[8.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_interfaces', 'pythonpath')
+[8.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/pythonpath.ps1'
+[8.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/pythonpath.dsv'
+[8.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/hook/pythonpath.sh'
+[8.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.ps1'
+[8.005s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.dsv'
+[8.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.sh'
+[8.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.bash'
+[8.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.zsh'
+[8.008s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/torcs_interfaces/share/colcon-core/packages/torcs_interfaces)
+[8.008s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rtos/dev_ws/src/ros2-torcs-client' with build type 'ament_python'
+[8.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_client', 'ament_prefix_path')
+[8.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/hook/ament_prefix_path.ps1'
+[8.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/hook/ament_prefix_path.dsv'
+[8.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/hook/ament_prefix_path.sh'
+[8.011s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.011s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.012s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.218s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rtos/dev_ws/src/ros2-torcs-client'
+[8.219s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.219s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.221s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.226s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/srl' for CMake module files
+[8.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/src/srl' returned '0': CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/srl build --build-base /home/rtos/dev_ws/build/srl/build install --prefix /home/rtos/dev_ws/install/srl --record /home/rtos/dev_ws/build/srl/install.log --single-version-externally-managed
+[8.227s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/srl' for CMake config files
+[8.227s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/srl/lib'
+[8.227s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/srl/bin'
+[8.227s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/srl/lib/pkgconfig/srl.pc'
+[8.227s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages'
+[8.227s] Level 1:colcon.colcon_core.shell:create_environment_hook('srl', 'pythonpath')
+[8.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/srl/share/srl/hook/pythonpath.ps1'
+[8.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/srl/share/srl/hook/pythonpath.dsv'
+[8.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/srl/share/srl/hook/pythonpath.sh'
+[8.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(srl)
+[8.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/srl/share/srl/package.ps1'
+[8.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/srl/share/srl/package.dsv'
+[8.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/srl/share/srl/package.sh'
+[8.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/srl/share/srl/package.bash'
+[8.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/srl/share/srl/package.zsh'
+[8.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/srl/share/colcon-core/packages/srl)
+[8.234s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rtos/dev_ws/src/scl' with build type 'ament_python'
+[8.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('scl', 'ament_prefix_path')
+[8.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/scl/share/scl/hook/ament_prefix_path.ps1'
+[8.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/scl/share/scl/hook/ament_prefix_path.dsv'
+[8.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/scl/share/scl/hook/ament_prefix_path.sh'
+[8.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.237s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/src/ros2-torcs-client': PYTHONPATH=/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/torcs_client build --build-base /home/rtos/dev_ws/build/torcs_client/build install --prefix /home/rtos/dev_ws/install/torcs_client --record /home/rtos/dev_ws/build/torcs_client/install.log --single-version-externally-managed
+[8.443s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rtos/dev_ws/src/scl'
+[8.444s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.444s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.446s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/src/scl': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/scl build --build-base /home/rtos/dev_ws/build/scl/build install --prefix /home/rtos/dev_ws/install/scl --record /home/rtos/dev_ws/build/scl/install.log --single-version-externally-managed
+[8.510s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_client' for CMake module files
+[8.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/src/ros2-torcs-client' returned '0': PYTHONPATH=/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/torcs_client build --build-base /home/rtos/dev_ws/build/torcs_client/build install --prefix /home/rtos/dev_ws/install/torcs_client --record /home/rtos/dev_ws/build/torcs_client/install.log --single-version-externally-managed
+[8.511s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_client' for CMake config files
+[8.512s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_client/lib'
+[8.512s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_client/bin'
+[8.512s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_client/lib/pkgconfig/torcs_client.pc'
+[8.512s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages'
+[8.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('torcs_client', 'pythonpath')
+[8.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/hook/pythonpath.ps1'
+[8.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/hook/pythonpath.dsv'
+[8.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/hook/pythonpath.sh'
+[8.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(torcs_client)
+[8.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/package.ps1'
+[8.514s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/package.dsv'
+[8.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/package.sh'
+[8.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/package.bash'
+[8.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/torcs_client/share/torcs_client/package.zsh'
+[8.516s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/torcs_client/share/colcon-core/packages/torcs_client)
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/scl' for CMake module files
+[8.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/src/scl' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/scl build --build-base /home/rtos/dev_ws/build/scl/build install --prefix /home/rtos/dev_ws/install/scl --record /home/rtos/dev_ws/build/scl/install.log --single-version-externally-managed
+[8.727s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/scl' for CMake config files
+[8.727s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/scl/lib'
+[8.728s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/scl/bin'
+[8.728s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/scl/lib/pkgconfig/scl.pc'
+[8.728s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages'
+[8.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('scl', 'pythonpath')
+[8.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/scl/share/scl/hook/pythonpath.ps1'
+[8.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/scl/share/scl/hook/pythonpath.dsv'
+[8.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/scl/share/scl/hook/pythonpath.sh'
+[8.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scl)
+[8.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/scl/share/scl/package.ps1'
+[8.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/scl/share/scl/package.dsv'
+[8.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/scl/share/scl/package.sh'
+[8.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/scl/share/scl/package.bash'
+[8.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/scl/share/scl/package.zsh'
+[8.731s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/scl/share/colcon-core/packages/scl)
+[8.732s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rtos/dev_ws/src/Torcs_5' with build type 'ament_python'
+[8.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('Torcs_5', 'ament_prefix_path')
+[8.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/hook/ament_prefix_path.ps1'
+[8.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/hook/ament_prefix_path.dsv'
+[8.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/hook/ament_prefix_path.sh'
+[8.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.736s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.738s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rtos/dev_ws/src/lkas4' with build type 'ament_python'
+[8.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('lkas4', 'ament_prefix_path')
+[8.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas4/share/lkas4/hook/ament_prefix_path.ps1'
+[8.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/lkas4/share/lkas4/hook/ament_prefix_path.dsv'
+[8.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas4/share/lkas4/hook/ament_prefix_path.sh'
+[8.741s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.741s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.743s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.745s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rtos/dev_ws/src/lkas5' with build type 'ament_python'
+[8.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('lkas5', 'ament_prefix_path')
+[8.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas5/share/lkas5/hook/ament_prefix_path.ps1'
+[8.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/lkas5/share/lkas5/hook/ament_prefix_path.dsv'
+[8.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas5/share/lkas5/hook/ament_prefix_path.sh'
+[8.748s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.748s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.750s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.950s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rtos/dev_ws/src/Torcs_5'
+[8.951s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.951s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.953s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[9.150s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rtos/dev_ws/src/lkas4'
+[9.151s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.151s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.153s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[9.353s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rtos/dev_ws/src/lkas5'
+[9.354s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.354s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.356s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[9.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/src/Torcs_5': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/Torcs_5 build --build-base /home/rtos/dev_ws/build/Torcs_5/build install --prefix /home/rtos/dev_ws/install/Torcs_5 --record /home/rtos/dev_ws/build/Torcs_5/install.log --single-version-externally-managed
+[9.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/src/lkas4': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas4 build --build-base /home/rtos/dev_ws/build/lkas4/build install --prefix /home/rtos/dev_ws/install/lkas4 --record /home/rtos/dev_ws/build/lkas4/install.log --single-version-externally-managed
+[9.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rtos/dev_ws/src/lkas5': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas5 build --build-base /home/rtos/dev_ws/build/lkas5/build install --prefix /home/rtos/dev_ws/install/lkas5 --record /home/rtos/dev_ws/build/lkas5/install.log --single-version-externally-managed
+[9.653s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/Torcs_5' for CMake module files
+[9.653s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/src/Torcs_5' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/Torcs_5 build --build-base /home/rtos/dev_ws/build/Torcs_5/build install --prefix /home/rtos/dev_ws/install/Torcs_5 --record /home/rtos/dev_ws/build/Torcs_5/install.log --single-version-externally-managed
+[9.654s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/Torcs_5' for CMake config files
+[9.654s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/Torcs_5/lib'
+[9.655s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/Torcs_5/bin'
+[9.655s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/Torcs_5/lib/pkgconfig/Torcs_5.pc'
+[9.655s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages'
+[9.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('Torcs_5', 'pythonpath')
+[9.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/hook/pythonpath.ps1'
+[9.656s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/hook/pythonpath.dsv'
+[9.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/hook/pythonpath.sh'
+[9.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Torcs_5)
+[9.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/package.ps1'
+[9.657s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/package.dsv'
+[9.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/package.sh'
+[9.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/package.bash'
+[9.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/Torcs_5/share/Torcs_5/package.zsh'
+[9.658s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/Torcs_5/share/colcon-core/packages/Torcs_5)
+[9.659s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas4' for CMake module files
+[9.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/src/lkas4' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas4 build --build-base /home/rtos/dev_ws/build/lkas4/build install --prefix /home/rtos/dev_ws/install/lkas4 --record /home/rtos/dev_ws/build/lkas4/install.log --single-version-externally-managed
+[9.660s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas4' for CMake config files
+[9.661s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas4/lib'
+[9.661s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas4/bin'
+[9.661s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas4/lib/pkgconfig/lkas4.pc'
+[9.661s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages'
+[9.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('lkas4', 'pythonpath')
+[9.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas4/share/lkas4/hook/pythonpath.ps1'
+[9.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/lkas4/share/lkas4/hook/pythonpath.dsv'
+[9.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas4/share/lkas4/hook/pythonpath.sh'
+[9.662s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lkas4)
+[9.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas4/share/lkas4/package.ps1'
+[9.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/lkas4/share/lkas4/package.dsv'
+[9.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas4/share/lkas4/package.sh'
+[9.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas4/share/lkas4/package.bash'
+[9.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas4/share/lkas4/package.zsh'
+[9.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/lkas4/share/colcon-core/packages/lkas4)
+[9.665s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas5' for CMake module files
+[9.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rtos/dev_ws/src/lkas5' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas5 build --build-base /home/rtos/dev_ws/build/lkas5/build install --prefix /home/rtos/dev_ws/install/lkas5 --record /home/rtos/dev_ws/build/lkas5/install.log --single-version-externally-managed
+[9.666s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas5' for CMake config files
+[9.667s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas5/lib'
+[9.667s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas5/bin'
+[9.667s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas5/lib/pkgconfig/lkas5.pc'
+[9.667s] Level 1:colcon.colcon_core.environment:checking '/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages'
+[9.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('lkas5', 'pythonpath')
+[9.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas5/share/lkas5/hook/pythonpath.ps1'
+[9.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rtos/dev_ws/install/lkas5/share/lkas5/hook/pythonpath.dsv'
+[9.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rtos/dev_ws/install/lkas5/share/lkas5/hook/pythonpath.sh'
+[9.668s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lkas5)
+[9.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas5/share/lkas5/package.ps1'
+[9.669s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rtos/dev_ws/install/lkas5/share/lkas5/package.dsv'
+[9.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas5/share/lkas5/package.sh'
+[9.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas5/share/lkas5/package.bash'
+[9.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/rtos/dev_ws/install/lkas5/share/lkas5/package.zsh'
+[9.670s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rtos/dev_ws/install/lkas5/share/colcon-core/packages/lkas5)
+[9.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.671s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.677s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.677s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.677s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.693s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.694s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rtos/dev_ws/install/local_setup.ps1'
+[9.695s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rtos/dev_ws/install/_local_setup_util_ps1.py'
+[9.696s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rtos/dev_ws/install/setup.ps1'
+[9.699s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rtos/dev_ws/install/local_setup.sh'
+[9.700s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rtos/dev_ws/install/_local_setup_util_sh.py'
+[9.701s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rtos/dev_ws/install/setup.sh'
+[9.703s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rtos/dev_ws/install/local_setup.bash'
+[9.703s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rtos/dev_ws/install/setup.bash'
+[9.706s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rtos/dev_ws/install/local_setup.zsh'
+[9.706s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rtos/dev_ws/install/setup.zsh'

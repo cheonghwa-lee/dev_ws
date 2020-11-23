@@ -1,0 +1,22 @@
+[0.212s] Invoking command in '/home/rtos/dev_ws/src/lkas5': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/splash_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas5 build --build-base /home/rtos/dev_ws/build/lkas5/build install --prefix /home/rtos/dev_ws/install/lkas5 --record /home/rtos/dev_ws/build/lkas5/install.log --single-version-externally-managed
+[0.394s] running egg_info
+[0.394s] writing ../../build/lkas5/lkas5.egg-info/PKG-INFO
+[0.394s] writing dependency_links to ../../build/lkas5/lkas5.egg-info/dependency_links.txt
+[0.395s] writing entry points to ../../build/lkas5/lkas5.egg-info/entry_points.txt
+[0.395s] writing requirements to ../../build/lkas5/lkas5.egg-info/requires.txt
+[0.395s] writing top-level names to ../../build/lkas5/lkas5.egg-info/top_level.txt
+[0.423s] reading manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'
+[0.424s] writing manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'
+[0.424s] running build
+[0.425s] running build_py
+[0.426s] running install
+[0.426s] running install_lib
+[0.428s] running install_data
+[0.429s] running install_egg_info
+[0.430s] removing '/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5-0.0.0-py3.8.egg-info' (and everything under it)
+[0.430s] Copying ../../build/lkas5/lkas5.egg-info to /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5-0.0.0-py3.8.egg-info
+[0.431s] running install_scripts
+[0.446s] Installing default_build_unit script to /home/rtos/dev_ws/install/lkas5/lib/lkas5
+[0.446s] Installing splash_server script to /home/rtos/dev_ws/install/lkas5/lib/lkas5
+[0.446s] writing list of installed files to '/home/rtos/dev_ws/build/lkas5/install.log'
+[0.466s] Invoked command in '/home/rtos/dev_ws/src/lkas5' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/splash_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas5 build --build-base /home/rtos/dev_ws/build/lkas5/build install --prefix /home/rtos/dev_ws/install/lkas5 --record /home/rtos/dev_ws/build/lkas5/install.log --single-version-externally-managed

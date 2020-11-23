@@ -1,0 +1,4 @@
+[console_scripts]
+default_build_unit = lkas4.default_build_unit_exec:main
+splash_server = lkas4.__init__:main
+

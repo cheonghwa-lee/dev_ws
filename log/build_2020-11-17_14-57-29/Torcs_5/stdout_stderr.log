@@ -1,0 +1,32 @@
+running egg_info
+writing ../../build/Torcs_5/Torcs_5.egg-info/PKG-INFO
+writing dependency_links to ../../build/Torcs_5/Torcs_5.egg-info/dependency_links.txt
+writing entry points to ../../build/Torcs_5/Torcs_5.egg-info/entry_points.txt
+writing requirements to ../../build/Torcs_5/Torcs_5.egg-info/requires.txt
+writing top-level names to ../../build/Torcs_5/Torcs_5.egg-info/top_level.txt
+reading manifest file '../../build/Torcs_5/Torcs_5.egg-info/SOURCES.txt'
+writing manifest file '../../build/Torcs_5/Torcs_5.egg-info/SOURCES.txt'
+running build
+running build_py
+copying Torcs_5/splash/component/processing_component_2.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+copying Torcs_5/splash/component/processing_component_1.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+copying Torcs_5/splash/component/sink_steer.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+copying Torcs_5/splash/component/processing_key.py -> /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component
+running install
+running install_lib
+copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_component_2.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_component_1.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/sink_steer.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+copying /home/rtos/dev_ws/build/Torcs_5/build/lib/Torcs_5/splash/component/processing_key.py -> /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component
+byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_component_2.py to processing_component_2.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_component_1.py to processing_component_1.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/sink_steer.py to sink_steer.cpython-38.pyc
+byte-compiling /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/processing_key.py to processing_key.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/Torcs_5/Torcs_5.egg-info to /home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5-0.0.0-py3.8.egg-info
+running install_scripts
+Installing default_build_unit script to /home/rtos/dev_ws/install/Torcs_5/lib/Torcs_5
+Installing splash_server script to /home/rtos/dev_ws/install/Torcs_5/lib/Torcs_5
+writing list of installed files to '/home/rtos/dev_ws/build/Torcs_5/install.log'

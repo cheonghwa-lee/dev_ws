@@ -1,0 +1,22 @@
+[0.636s] Invoking command in '/home/rtos/dev_ws/src/lkas5': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas5 build --build-base /home/rtos/dev_ws/build/lkas5/build install --prefix /home/rtos/dev_ws/install/lkas5 --record /home/rtos/dev_ws/build/lkas5/install.log --single-version-externally-managed
+[0.838s] running egg_info
+[0.839s] writing ../../build/lkas5/lkas5.egg-info/PKG-INFO
+[0.839s] writing dependency_links to ../../build/lkas5/lkas5.egg-info/dependency_links.txt
+[0.839s] writing entry points to ../../build/lkas5/lkas5.egg-info/entry_points.txt
+[0.839s] writing requirements to ../../build/lkas5/lkas5.egg-info/requires.txt
+[0.839s] writing top-level names to ../../build/lkas5/lkas5.egg-info/top_level.txt
+[0.869s] reading manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'
+[0.870s] writing manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'
+[0.870s] running build
+[0.870s] running build_py
+[0.871s] running install
+[0.872s] running install_lib
+[0.874s] running install_data
+[0.874s] running install_egg_info
+[0.876s] removing '/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5-0.0.0-py3.8.egg-info' (and everything under it)
+[0.876s] Copying ../../build/lkas5/lkas5.egg-info to /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5-0.0.0-py3.8.egg-info
+[0.876s] running install_scripts
+[0.893s] Installing default_build_unit script to /home/rtos/dev_ws/install/lkas5/lib/lkas5
+[0.893s] Installing splash_server script to /home/rtos/dev_ws/install/lkas5/lib/lkas5
+[0.895s] writing list of installed files to '/home/rtos/dev_ws/build/lkas5/install.log'
+[0.920s] Invoked command in '/home/rtos/dev_ws/src/lkas5' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/lkas4:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas4/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/lkas5 build --build-base /home/rtos/dev_ws/build/lkas5/build install --prefix /home/rtos/dev_ws/install/lkas5 --record /home/rtos/dev_ws/build/lkas5/install.log --single-version-externally-managed

@@ -1,0 +1,3 @@
+string factory
+string mode_configuration
+string name_space

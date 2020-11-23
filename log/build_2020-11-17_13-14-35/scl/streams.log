@@ -1,0 +1,23 @@
+[0.238s] Invoking command in '/home/rtos/dev_ws/src/scl': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/scl build --build-base /home/rtos/dev_ws/build/scl/build install --prefix /home/rtos/dev_ws/install/scl --record /home/rtos/dev_ws/build/scl/install.log --single-version-externally-managed
+[0.441s] running egg_info
+[0.442s] writing ../../build/scl/scl.egg-info/PKG-INFO
+[0.442s] writing dependency_links to ../../build/scl/scl.egg-info/dependency_links.txt
+[0.442s] writing entry points to ../../build/scl/scl.egg-info/entry_points.txt
+[0.442s] writing requirements to ../../build/scl/scl.egg-info/requires.txt
+[0.442s] writing top-level names to ../../build/scl/scl.egg-info/top_level.txt
+[0.474s] reading manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+[0.475s] writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'
+[0.475s] running build
+[0.475s] running build_py
+[0.476s] copying scl/clink.py -> /home/rtos/dev_ws/build/scl/build/lib/scl
+[0.476s] running install
+[0.477s] running install_lib
+[0.478s] copying /home/rtos/dev_ws/build/scl/build/lib/scl/clink.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl
+[0.479s] byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/clink.py to clink.cpython-38.pyc
+[0.481s] running install_data
+[0.481s] running install_egg_info
+[0.483s] removing '/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info' (and everything under it)
+[0.483s] Copying ../../build/scl/scl.egg-info to /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info
+[0.484s] running install_scripts
+[0.502s] writing list of installed files to '/home/rtos/dev_ws/build/scl/install.log'
+[0.530s] Invoked command in '/home/rtos/dev_ws/src/scl' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/Torcs_5:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/torcs_interfaces:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/scl build --build-base /home/rtos/dev_ws/build/scl/build install --prefix /home/rtos/dev_ws/install/scl --record /home/rtos/dev_ws/build/scl/install.log --single-version-externally-managed

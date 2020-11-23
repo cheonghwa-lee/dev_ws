@@ -1,0 +1,14 @@
+msg/SplashMessage.idl
+msg/SplashMessage.msg
+srv/RegisterMode.idl
+srv/RegisterMode.srv
+srv/RegisterMode_Request.msg
+srv/RegisterMode_Response.msg
+srv/RequestModeChange.idl
+srv/RequestModeChange.srv
+srv/RequestModeChange_Request.msg
+srv/RequestModeChange_Response.msg
+srv/UnregisterMode.idl
+srv/UnregisterMode.srv
+srv/UnregisterMode_Request.msg
+srv/UnregisterMode_Response.msg

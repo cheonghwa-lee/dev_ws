@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from splash_interfaces/srv/RegisterMode.srv
+// generated code does not contain a copyright notice
+
+
+module splash_interfaces {
+  module srv {
+    struct RegisterMode_Request {
+      string factory;
+
+      string mode_configuration;
+
+      string name_space;
+    };
+    struct RegisterMode_Response {
+      boolean ok;
+    };
+  };
+};

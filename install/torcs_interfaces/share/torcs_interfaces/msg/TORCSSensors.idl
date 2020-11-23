@@ -1,0 +1,84 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from torcs_interfaces/msg/TORCSSensors.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module torcs_interfaces {
+  module msg {
+    struct TORCSSensors {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " Angle between the car direction and the direction of the track axis [-PI,PI] in rad")
+      double angle;
+
+      @verbatim (language="comment", text=
+        " Time elapsed during current lap in seconds")
+      double current_lap_time;
+
+      @verbatim (language="comment", text=
+        " Current damage of the car (the higher is the value the higher is the damage)")
+      double damage;
+
+      @verbatim (language="comment", text=
+        " Distance of the car from the start line along the track line")
+      double dist_from_start;
+
+      @verbatim (language="comment", text=
+        " Distance covered by the car from the beginning of the race")
+      double dist_raced;
+
+      @verbatim (language="comment", text=
+        " Distance to middle")
+      double dist_to_middle;
+
+      @verbatim (language="comment", text=
+        " Distance to left")
+      double dist_to_left;
+
+      @verbatim (language="comment", text=
+        " Distance to right")
+      double dist_to_right;
+
+      @verbatim (language="comment", text=
+        " Current fuel level")
+      double fuel;
+
+      @verbatim (language="comment", text=
+        " Current gear: -1 is reverse, 0 is neutral and the gear from 1 to 6")
+      int8 gear;
+
+      @verbatim (language="comment", text=
+        " Time to complete the last lap")
+      double last_lap_time;
+
+      @verbatim (language="comment", text=
+        " Position in the race with respect to other cars")
+      uint8 race_pos;
+
+      @verbatim (language="comment", text=
+        " Number of rotation per minute of the car engine")
+      double rpm;
+
+      @verbatim (language="comment", text=
+        " Distance between the car and the track axis. The value is" "\n"
+        " normalized w.r.t to the track width: it is 0 when car is on" "\n"
+        " the axis, -1 when the car is on the right edge of the track" "\n"
+        " and +1 when it is on the left edge of the car. Values greater" "\n"
+        " than 1 or smaller than -1 mean that the car is outside of" "\n"
+        " the track.")
+      double track_pos;
+
+      @verbatim (language="comment", text=
+        " Vector of 4 sensors representing the rotation speed of" "\n"
+        " wheels in radians")
+      sequence<double> wheel_spin_vel;
+
+      @verbatim (language="comment", text=
+        " Distance of the car mass center from the surface of the track" "\n"
+        " along the Z axis in meters")
+      double z;
+    };
+  };
+};

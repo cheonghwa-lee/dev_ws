@@ -1,0 +1,7 @@
+{
+  "package_name": "torcs_interfaces",
+  "non_idl_tuples": [
+    "/home/rtos/dev_ws/src/torcs_interfaces:msg/TORCSSensors.msg",
+    "/home/rtos/dev_ws/src/torcs_interfaces:msg/TORCSCtrl.msg"
+  ]
+}

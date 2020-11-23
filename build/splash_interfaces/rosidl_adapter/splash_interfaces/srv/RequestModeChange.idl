@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from splash_interfaces/srv/RequestModeChange.srv
+// generated code does not contain a copyright notice
+
+
+module splash_interfaces {
+  module srv {
+    struct RequestModeChange_Request {
+      string factory;
+
+      string event;
+    };
+    struct RequestModeChange_Response {
+      boolean ok;
+    };
+  };
+};

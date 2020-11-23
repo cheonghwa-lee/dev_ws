@@ -1,0 +1,4 @@
+/home/rtos/dev_ws/build/splash_interfaces/rosidl_adapter/splash_interfaces:srv/RequestModeChange.idl
+/home/rtos/dev_ws/build/splash_interfaces/rosidl_adapter/splash_interfaces:srv/RegisterMode.idl
+/home/rtos/dev_ws/build/splash_interfaces/rosidl_adapter/splash_interfaces:srv/UnregisterMode.idl
+/home/rtos/dev_ws/build/splash_interfaces/rosidl_adapter/splash_interfaces:msg/SplashMessage.idl

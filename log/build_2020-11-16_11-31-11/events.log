@@ -1,0 +1,911 @@
+[0.000000] (-) TimerEvent: {}
+[0.000117] (splash_interfaces) JobQueued: {'identifier': 'splash_interfaces', 'dependencies': OrderedDict()}
+[0.000314] (torcs_interfaces) JobQueued: {'identifier': 'torcs_interfaces', 'dependencies': OrderedDict()}
+[0.000359] (srl) JobQueued: {'identifier': 'srl', 'dependencies': OrderedDict([('splash_interfaces', '/home/rtos/dev_ws/install/splash_interfaces')])}
+[0.000385] (torcs_client) JobQueued: {'identifier': 'torcs_client', 'dependencies': OrderedDict([('torcs_interfaces', '/home/rtos/dev_ws/install/torcs_interfaces')])}
+[0.000420] (scl) JobQueued: {'identifier': 'scl', 'dependencies': OrderedDict([('splash_interfaces', '/home/rtos/dev_ws/install/splash_interfaces'), ('srl', '/home/rtos/dev_ws/install/srl')])}
+[0.000444] (lkas5) JobQueued: {'identifier': 'lkas5', 'dependencies': OrderedDict([('splash_interfaces', '/home/rtos/dev_ws/install/splash_interfaces'), ('srl', '/home/rtos/dev_ws/install/srl'), ('scl', '/home/rtos/dev_ws/install/scl')])}
+[0.000465] (splash_interfaces) JobStarted: {'identifier': 'splash_interfaces'}
+[0.007299] (torcs_interfaces) JobStarted: {'identifier': 'torcs_interfaces'}
+[0.013319] (splash_interfaces) JobProgress: {'identifier': 'splash_interfaces', 'progress': 'cmake'}
+[0.013621] (splash_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/rtos/dev_ws/src/splash_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/splash_interfaces'], 'cwd': '/home/rtos/dev_ws/build/splash_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtos'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1593'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rtos'), ('OLDPWD', '/home/rtos/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1410'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1974'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rtos'), ('JOURNAL_STREAM', '9:34722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636'), ('INVOCATION_ID', 'e65ff092ed7d406a81a658fde48f455d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtos/dev_ws/build/splash_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.019022] (torcs_interfaces) JobProgress: {'identifier': 'torcs_interfaces', 'progress': 'cmake'}
+[0.019204] (torcs_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/rtos/dev_ws/src/torcs_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/torcs_interfaces'], 'cwd': '/home/rtos/dev_ws/build/torcs_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtos'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1593'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rtos'), ('OLDPWD', '/home/rtos/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1410'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1974'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rtos'), ('JOURNAL_STREAM', '9:34722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636'), ('INVOCATION_ID', 'e65ff092ed7d406a81a658fde48f455d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtos/dev_ws/build/torcs_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.076929] (splash_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.078594] (torcs_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.099397] (-) TimerEvent: {}
+[0.126331] (splash_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.127381] (torcs_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.130922] (splash_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.131416] (torcs_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.194391] (splash_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.194553] (torcs_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.195170] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.195246] (splash_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199528] (-) TimerEvent: {}
+[0.257440] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.257671] (splash_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.268338] (splash_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.268646] (splash_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.269204] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.269603] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.270963] (splash_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.271963] (torcs_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.299634] (-) TimerEvent: {}
+[0.349209] (torcs_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.349375] (splash_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.350179] (splash_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.350271] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399746] (-) TimerEvent: {}
+[0.421730] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.421898] (splash_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.432794] (splash_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.432956] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.433298] (splash_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.433436] (torcs_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.435084] (splash_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.435176] (torcs_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.457354] (torcs_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") \n'}
+[0.457515] (splash_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") \n'}
+[0.457588] (splash_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.457650] (torcs_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.499834] (-) TimerEvent: {}
+[0.600148] (-) TimerEvent: {}
+[0.626166] (splash_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 2.0.3 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[0.626330] (torcs_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.628784] (torcs_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.634156] (torcs_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.639651] (splash_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.645001] (splash_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.700249] (-) TimerEvent: {}
+[0.701581] (torcs_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.707253] (splash_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.725676] (torcs_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.730421] (splash_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.800362] (-) TimerEvent: {}
+[0.800684] (splash_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.802620] (torcs_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.827662] (torcs_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 2.0.3 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[0.842912] (splash_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.872771] (splash_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") \n'}
+[0.876951] (torcs_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") \n'}
+[0.900458] (-) TimerEvent: {}
+[1.000722] (-) TimerEvent: {}
+[1.021230] (torcs_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.0 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.030933] (splash_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.0 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.100834] (-) TimerEvent: {}
+[1.179498] (torcs_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.190201] (splash_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200908] (-) TimerEvent: {}
+[1.239239] (torcs_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.250632] (splash_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.260684] (torcs_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3.5") \n'}
+[1.261692] (torcs_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.272106] (splash_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3.5") \n'}
+[1.273102] (splash_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.284736] (torcs_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.5", minimum required is "3.5") \n'}
+[1.284935] (torcs_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.285009] (torcs_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.285074] (torcs_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.296568] (splash_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.5", minimum required is "3.5") \n'}
+[1.296867] (splash_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.297002] (splash_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.297124] (splash_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.300995] (-) TimerEvent: {}
+[1.303920] (torcs_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.314965] (splash_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.359803] (torcs_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.375990] (torcs_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.377793] (splash_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.382404] (torcs_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.385872] (torcs_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.390150] (torcs_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401079] (-) TimerEvent: {}
+[1.424647] (splash_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.426940] (splash_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/rtos/dev_ws/build/splash_interfaces\n'}
+[1.432715] (torcs_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.433386] (splash_interfaces) CommandEnded: {'returncode': 0}
+[1.434632] (splash_interfaces) JobProgress: {'identifier': 'splash_interfaces', 'progress': 'build'}
+[1.434848] (splash_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rtos/dev_ws/build/splash_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/rtos/dev_ws/build/splash_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtos'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1593'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rtos'), ('OLDPWD', '/home/rtos/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1410'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1974'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rtos'), ('JOURNAL_STREAM', '9:34722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636'), ('INVOCATION_ID', 'e65ff092ed7d406a81a658fde48f455d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtos/dev_ws/build/splash_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.436702] (torcs_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/rtos/dev_ws/build/torcs_interfaces\n'}
+[1.443869] (torcs_interfaces) CommandEnded: {'returncode': 0}
+[1.444521] (torcs_interfaces) JobProgress: {'identifier': 'torcs_interfaces', 'progress': 'build'}
+[1.444798] (torcs_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rtos/dev_ws/build/torcs_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/rtos/dev_ws/build/torcs_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtos'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1593'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rtos'), ('OLDPWD', '/home/rtos/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1410'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1974'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rtos'), ('JOURNAL_STREAM', '9:34722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636'), ('INVOCATION_ID', 'e65ff092ed7d406a81a658fde48f455d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtos/dev_ws/build/torcs_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.472191] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__cpp\x1b[0m\n'}
+[1.474560] (splash_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.483666] (splash_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.486951] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__cpp\x1b[0m\n'}
+[1.487491] (torcs_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.496644] (torcs_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.501196] (-) TimerEvent: {}
+[1.601564] (-) TimerEvent: {}
+[1.701882] (-) TimerEvent: {}
+[1.802165] (-) TimerEvent: {}
+[1.897472] (splash_interfaces) StdoutLine: {'line': b'[  3%] Built target splash_interfaces__cpp\n'}
+[1.902276] (-) TimerEvent: {}
+[1.910803] (splash_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.911038] (splash_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.913045] (splash_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.918505] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.936425] (splash_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/srv/detail/register_mode__functions.c.o\x1b[0m\n'}
+[1.936678] (splash_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/srv/detail/request_mode_change__functions.c.o\x1b[0m\n'}
+[1.938833] (splash_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/srv/detail/unregister_mode__functions.c.o\x1b[0m\n'}
+[1.947570] (splash_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_generator_c.dir/rosidl_generator_c/splash_interfaces/msg/detail/splash_message__functions.c.o\x1b[0m\n'}
+[2.002375] (-) TimerEvent: {}
+[2.032730] (splash_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libsplash_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.084845] (splash_interfaces) StdoutLine: {'line': b'[ 18%] Built target splash_interfaces__rosidl_generator_c\n'}
+[2.098651] (splash_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.098908] (splash_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.102465] (-) TimerEvent: {}
+[2.164707] (torcs_interfaces) StdoutLine: {'line': b'[  5%] Built target torcs_interfaces__cpp\n'}
+[2.180269] (torcs_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.180554] (torcs_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.180691] (torcs_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.194134] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_generator_c\x1b[0m\n'}
+[2.202562] (-) TimerEvent: {}
+[2.262420] (torcs_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_generator_c.dir/rosidl_generator_c/torcs_interfaces/msg/detail/torcs_sensors__functions.c.o\x1b[0m\n'}
+[2.286800] (torcs_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_generator_c.dir/rosidl_generator_c/torcs_interfaces/msg/detail/torcs_ctrl__functions.c.o\x1b[0m\n'}
+[2.302665] (-) TimerEvent: {}
+[2.402993] (-) TimerEvent: {}
+[2.412710] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.440328] (torcs_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libtorcs_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.440602] (splash_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/srv/request_mode_change__type_support.cpp.o\x1b[0m\n'}
+[2.462759] (splash_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/srv/register_mode__type_support.cpp.o\x1b[0m\n'}
+[2.465493] (splash_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/srv/unregister_mode__type_support.cpp.o\x1b[0m\n'}
+[2.503095] (-) TimerEvent: {}
+[2.578307] (splash_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/splash_interfaces/msg/splash_message__type_support.cpp.o\x1b[0m\n'}
+[2.603201] (-) TimerEvent: {}
+[2.611147] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.642507] (torcs_interfaces) StdoutLine: {'line': b'[ 20%] Built target torcs_interfaces__rosidl_generator_c\n'}
+[2.703313] (-) TimerEvent: {}
+[2.706610] (splash_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/srv/detail/request_mode_change__type_support.cpp.o\x1b[0m\n'}
+[2.707211] (torcs_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.719189] (torcs_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.757020] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.803430] (-) TimerEvent: {}
+[2.846323] (splash_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/srv/request_mode_change__type_support.cpp.o\x1b[0m\n'}
+[2.903481] (-) TimerEvent: {}
+[2.941488] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.948584] (splash_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/srv/register_mode__type_support.cpp.o\x1b[0m\n'}
+[3.003578] (-) TimerEvent: {}
+[3.007349] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.019379] (splash_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/srv/unregister_mode__type_support.cpp.o\x1b[0m\n'}
+[3.027364] (splash_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/srv/detail/dds_fastrtps/request_mode_change__type_support.cpp.o\x1b[0m\n'}
+[3.063560] (splash_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/srv/detail/request_mode_change__type_support.c.o\x1b[0m\n'}
+[3.091612] (splash_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/srv/detail/register_mode__type_support.c.o\x1b[0m\n'}
+[3.091869] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.099679] (splash_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/srv/detail/dds_fastrtps/register_mode__type_support.cpp.o\x1b[0m\n'}
+[3.103672] (-) TimerEvent: {}
+[3.176924] (torcs_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/torcs_interfaces/msg/torcs_sensors__type_support.cpp.o\x1b[0m\n'}
+[3.186175] (splash_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/splash_interfaces/msg/splash_message__type_support.cpp.o\x1b[0m\n'}
+[3.200628] (torcs_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/torcs_interfaces/msg/torcs_ctrl__type_support.cpp.o\x1b[0m\n'}
+[3.203783] (-) TimerEvent: {}
+[3.238659] (splash_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/srv/detail/dds_fastrtps/unregister_mode__type_support.cpp.o\x1b[0m\n'}
+[3.276547] (splash_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/srv/detail/unregister_mode__type_support.c.o\x1b[0m\n'}
+[3.303890] (-) TimerEvent: {}
+[3.312172] (splash_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.362888] (splash_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.364791] (splash_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/splash_interfaces/msg/detail/dds_fastrtps/splash_message__type_support.cpp.o\x1b[0m\n'}
+[3.404036] (-) TimerEvent: {}
+[3.426965] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.440114] (splash_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/srv/detail/register_mode__type_support.cpp.o\x1b[0m\n'}
+[3.441376] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.504142] (-) TimerEvent: {}
+[3.554784] (splash_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/splash_interfaces/msg/detail/splash_message__type_support.c.o\x1b[0m\n'}
+[3.558170] (torcs_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/torcs_interfaces/msg/detail/torcs_ctrl__type_support.cpp.o\x1b[0m\n'}
+[3.584368] (torcs_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/torcs_interfaces/msg/detail/dds_fastrtps/torcs_ctrl__type_support.cpp.o\x1b[0m\n'}
+[3.592038] (torcs_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/torcs_interfaces/msg/detail/dds_fastrtps/torcs_sensors__type_support.cpp.o\x1b[0m\n'}
+[3.596113] (torcs_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/torcs_interfaces/msg/detail/torcs_sensors__type_support.cpp.o\x1b[0m\n'}
+[3.604248] (-) TimerEvent: {}
+[3.654921] (splash_interfaces) StdoutLine: {'line': b'[ 58%] Built target splash_interfaces__rosidl_typesupport_cpp\n'}
+[3.704355] (-) TimerEvent: {}
+[3.739366] (splash_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/srv/detail/unregister_mode__type_support.cpp.o\x1b[0m\n'}
+[3.762825] (splash_interfaces) StdoutLine: {'line': b'[ 60%] Built target splash_interfaces__rosidl_typesupport_c\n'}
+[3.804461] (-) TimerEvent: {}
+[3.815703] (splash_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libsplash_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.824760] (splash_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/splash_interfaces/msg/detail/splash_message__type_support.cpp.o\x1b[0m\n'}
+[3.830025] (torcs_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libtorcs_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.867784] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[3.904577] (-) TimerEvent: {}
+[3.955521] (torcs_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/torcs_interfaces/msg/torcs_sensors__type_support.cpp.o\x1b[0m\n'}
+[3.960324] (torcs_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/torcs_interfaces/msg/torcs_ctrl__type_support.cpp.o\x1b[0m\n'}
+[4.004686] (-) TimerEvent: {}
+[4.019214] (splash_interfaces) StdoutLine: {'line': b'[ 63%] Built target splash_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.058346] (torcs_interfaces) StdoutLine: {'line': b'[ 48%] Built target torcs_interfaces__rosidl_typesupport_cpp\n'}
+[4.104785] (-) TimerEvent: {}
+[4.146366] (torcs_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libtorcs_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.204907] (-) TimerEvent: {}
+[4.210640] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.305016] (-) TimerEvent: {}
+[4.322261] (torcs_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/torcs_interfaces/msg/detail/torcs_sensors__type_support.c.o\x1b[0m\n'}
+[4.322529] (torcs_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/torcs_interfaces/msg/detail/torcs_ctrl__type_support.c.o\x1b[0m\n'}
+[4.328928] (torcs_interfaces) StdoutLine: {'line': b'[ 56%] Built target torcs_interfaces__rosidl_typesupport_c\n'}
+[4.378799] (torcs_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libtorcs_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.398079] (torcs_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libtorcs_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.405139] (-) TimerEvent: {}
+[4.423846] (splash_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.442174] (splash_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.446152] (torcs_interfaces) StdoutLine: {'line': b'[ 61%] Built target torcs_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.505298] (-) TimerEvent: {}
+[4.540254] (splash_interfaces) StdoutLine: {'line': b'[ 67%] Built target splash_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.541123] (torcs_interfaces) StdoutLine: {'line': b'[ 61%] Built target torcs_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.557037] (splash_interfaces) StdoutLine: {'line': b'[ 67%] Built target splash_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.570532] (splash_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.605379] (-) TimerEvent: {}
+[4.617795] (torcs_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libtorcs_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.705486] (-) TimerEvent: {}
+[4.713465] (torcs_interfaces) StdoutLine: {'line': b'[ 64%] Built target torcs_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.723011] (torcs_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.805579] (-) TimerEvent: {}
+[4.905866] (-) TimerEvent: {}
+[4.960901] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.986337] (splash_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/srv/detail/register_mode__type_support_c.cpp.o\x1b[0m\n'}
+[4.987278] (splash_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/srv/detail/request_mode_change__type_support_c.cpp.o\x1b[0m\n'}
+[4.988988] (splash_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/srv/detail/unregister_mode__type_support_c.cpp.o\x1b[0m\n'}
+[4.992169] (splash_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/splash_interfaces/msg/detail/splash_message__type_support_c.cpp.o\x1b[0m\n'}
+[5.005973] (-) TimerEvent: {}
+[5.106263] (-) TimerEvent: {}
+[5.206539] (-) TimerEvent: {}
+[5.295964] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.306662] (-) TimerEvent: {}
+[5.315825] (torcs_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/torcs_interfaces/msg/detail/torcs_ctrl__type_support_c.cpp.o\x1b[0m\n'}
+[5.316659] (torcs_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/torcs_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/torcs_interfaces/msg/detail/torcs_sensors__type_support_c.cpp.o\x1b[0m\n'}
+[5.406776] (-) TimerEvent: {}
+[5.507209] (-) TimerEvent: {}
+[5.565399] (splash_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libsplash_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.607329] (-) TimerEvent: {}
+[5.655664] (splash_interfaces) StdoutLine: {'line': b'[ 78%] Built target splash_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.664912] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces\x1b[0m\n'}
+[5.676691] (splash_interfaces) StdoutLine: {'line': b'[ 78%] Built target splash_interfaces\n'}
+[5.689399] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__py\x1b[0m\n'}
+[5.699990] (splash_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.707444] (-) TimerEvent: {}
+[5.755670] (torcs_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libtorcs_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.807504] (-) TimerEvent: {}
+[5.848552] (torcs_interfaces) StdoutLine: {'line': b'[ 74%] Built target torcs_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.857789] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces\x1b[0m\n'}
+[5.867121] (torcs_interfaces) StdoutLine: {'line': b'[ 74%] Built target torcs_interfaces\n'}
+[5.879293] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__py\x1b[0m\n'}
+[5.889198] (torcs_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.907597] (-) TimerEvent: {}
+[6.007846] (-) TimerEvent: {}
+[6.108104] (-) TimerEvent: {}
+[6.208346] (-) TimerEvent: {}
+[6.308611] (-) TimerEvent: {}
+[6.408899] (-) TimerEvent: {}
+[6.509176] (-) TimerEvent: {}
+[6.520335] (splash_interfaces) StdoutLine: {'line': b'[ 80%] Built target splash_interfaces__py\n'}
+[6.533288] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__python\x1b[0m\n'}
+[6.566280] (splash_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/srv/_request_mode_change_s.c.o\x1b[0m\n'}
+[6.566549] (splash_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/srv/_register_mode_s.c.o\x1b[0m\n'}
+[6.566780] (splash_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/msg/_splash_message_s.c.o\x1b[0m\n'}
+[6.567014] (splash_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__python.dir/rosidl_generator_py/splash_interfaces/srv/_unregister_mode_s.c.o\x1b[0m\n'}
+[6.609290] (-) TimerEvent: {}
+[6.709213] (splash_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/splash_interfaces/libsplash_interfaces__python.so\x1b[0m\n'}
+[6.709482] (-) TimerEvent: {}
+[6.751247] (splash_interfaces) StdoutLine: {'line': b'[ 89%] Built target splash_interfaces__python\n'}
+[6.761788] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.763140] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.763768] (splash_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target splash_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.783397] (splash_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/splash_interfaces/_splash_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.783760] (splash_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/splash_interfaces/_splash_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.786734] (splash_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/splash_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/splash_interfaces/_splash_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.809594] (-) TimerEvent: {}
+[6.885445] (splash_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/splash_interfaces/splash_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.887692] (splash_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/splash_interfaces/splash_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.906765] (splash_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/splash_interfaces/splash_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.909697] (-) TimerEvent: {}
+[6.927581] (splash_interfaces) StdoutLine: {'line': b'[100%] Built target splash_interfaces__rosidl_typesupport_c__pyext\n'}
+[6.949380] (splash_interfaces) StdoutLine: {'line': b'[100%] Built target splash_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[6.951906] (splash_interfaces) StdoutLine: {'line': b'[100%] Built target splash_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.963409] (splash_interfaces) CommandEnded: {'returncode': 0}
+[7.009877] (-) TimerEvent: {}
+[7.024440] (torcs_interfaces) StdoutLine: {'line': b'[ 76%] Built target torcs_interfaces__py\n'}
+[7.033750] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__python\x1b[0m\n'}
+[7.043732] (splash_interfaces) JobProgress: {'identifier': 'splash_interfaces', 'progress': 'install'}
+[7.053677] (torcs_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__python.dir/rosidl_generator_py/torcs_interfaces/msg/_torcs_ctrl_s.c.o\x1b[0m\n'}
+[7.054064] (torcs_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__python.dir/rosidl_generator_py/torcs_interfaces/msg/_torcs_sensors_s.c.o\x1b[0m\n'}
+[7.055079] (splash_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rtos/dev_ws/build/splash_interfaces'], 'cwd': '/home/rtos/dev_ws/build/splash_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtos'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1593'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rtos'), ('OLDPWD', '/home/rtos/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1410'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1974'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rtos'), ('JOURNAL_STREAM', '9:34722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636'), ('INVOCATION_ID', 'e65ff092ed7d406a81a658fde48f455d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtos/dev_ws/build/splash_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.067015] (splash_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.067487] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/rosidl_interfaces/splash_interfaces\n'}
+[7.067717] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces\n'}
+[7.067898] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg\n'}
+[7.068058] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail\n'}
+[7.068219] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__functions.h\n'}
+[7.068376] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__struct.h\n'}
+[7.068548] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__type_support.h\n'}
+[7.068689] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__functions.c\n'}
+[7.068833] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.069019] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/splash_message.h\n'}
+[7.069166] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv\n'}
+[7.069318] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail\n'}
+[7.069462] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__functions.h\n'}
+[7.069593] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__type_support.h\n'}
+[7.069706] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__functions.c\n'}
+[7.069831] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__type_support.h\n'}
+[7.070012] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__struct.h\n'}
+[7.070188] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__functions.c\n'}
+[7.070345] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__type_support.h\n'}
+[7.070482] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__struct.h\n'}
+[7.070608] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__struct.h\n'}
+[7.070730] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__functions.h\n'}
+[7.070858] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__functions.h\n'}
+[7.071053] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__functions.c\n'}
+[7.071217] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/unregister_mode.h\n'}
+[7.071375] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/register_mode.h\n'}
+[7.071514] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/request_mode_change.h\n'}
+[7.071641] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/library_path.sh\n'}
+[7.071780] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/library_path.dsv\n'}
+[7.071903] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_generator_c.so\n'}
+[7.072033] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_generator_c.so" to ""\n'}
+[7.072218] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces\n'}
+[7.072377] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg\n'}
+[7.072532] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail\n'}
+[7.072680] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_fastrtps_c.h\n'}
+[7.072823] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.072952] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv\n'}
+[7.073085] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail\n'}
+[7.073207] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[7.073328] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[7.073484] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_fastrtps_c.h\n'}
+[7.073642] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[7.073769] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.073912] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces\n'}
+[7.074109] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg\n'}
+[7.074313] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail\n'}
+[7.074524] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/dds_fastrtps\n'}
+[7.074702] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.074903] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.075058] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv\n'}
+[7.075224] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail\n'}
+[7.075374] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/dds_fastrtps\n'}
+[7.075535] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.075661] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.075859] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.076041] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.076206] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.076363] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces\n'}
+[7.076510] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg\n'}
+[7.076630] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail\n'}
+[7.076774] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_introspection_c.h\n'}
+[7.076891] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__type_support.c\n'}
+[7.077013] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.077138] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv\n'}
+[7.077273] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail\n'}
+[7.077395] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__type_support.c\n'}
+[7.077552] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_introspection_c.h\n'}
+[7.077671] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__type_support.c\n'}
+[7.077792] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_introspection_c.h\n'}
+[7.077910] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_introspection_c.h\n'}
+[7.078067] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__type_support.c\n'}
+[7.078192] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[7.078332] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.078451] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_c.so\n'}
+[7.078612] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[7.078756] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces\n'}
+[7.078928] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg\n'}
+[7.079051] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail\n'}
+[7.079170] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__traits.hpp\n'}
+[7.079288] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__struct.hpp\n'}
+[7.079406] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__builder.hpp\n'}
+[7.079541] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/splash_message.hpp\n'}
+[7.079661] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv\n'}
+[7.079777] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail\n'}
+[7.079892] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__struct.hpp\n'}
+[7.080009] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__traits.hpp\n'}
+[7.080127] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__struct.hpp\n'}
+[7.080244] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__traits.hpp\n'}
+[7.080362] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__traits.hpp\n'}
+[7.080480] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__struct.hpp\n'}
+[7.080597] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__builder.hpp\n'}
+[7.080716] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__builder.hpp\n'}
+[7.080835] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__builder.hpp\n'}
+[7.080952] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/request_mode_change.hpp\n'}
+[7.081068] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/register_mode.hpp\n'}
+[7.081186] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/unregister_mode.hpp\n'}
+[7.081302] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces\n'}
+[7.081417] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg\n'}
+[7.081534] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail\n'}
+[7.081650] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__type_support.cpp\n'}
+[7.081778] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/msg/detail/splash_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.081905] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv\n'}
+[7.082025] (splash_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail\n'}
+[7.082143] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.082261] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__type_support.cpp\n'}
+[7.082381] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__type_support.cpp\n'}
+[7.082498] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/request_mode_change__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.082616] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/unregister_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.082738] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/include/splash_interfaces/srv/detail/register_mode__type_support.cpp\n'}
+[7.082856] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[7.082977] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.083089] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_cpp.so\n'}
+[7.083205] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[7.083322] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/pythonpath.sh\n'}
+[7.083448] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/pythonpath.dsv\n'}
+[7.083571] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/__init__.py\n'}
+[7.105550] (splash_interfaces) StdoutLine: {'line': b"Compiling '/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/__init__.py'...\n"}
+[7.109839] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv\n'}
+[7.110179] (-) TimerEvent: {}
+[7.110460] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_register_mode_s.c\n'}
+[7.110657] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_request_mode_change_s.c\n'}
+[7.110789] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/__init__.py\n'}
+[7.110976] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_request_mode_change.py\n'}
+[7.111142] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_register_mode.py\n'}
+[7.111295] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_unregister_mode.py\n'}
+[7.111431] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/srv/_unregister_mode_s.c\n'}
+[7.111574] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg\n'}
+[7.111736] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg/_splash_message.py\n'}
+[7.111862] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg/__init__.py\n'}
+[7.111980] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/msg/_splash_message_s.c\n'}
+[7.112122] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.112270] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.112396] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.112747] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.112950] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.113429] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages/splash_interfaces/splash_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.113596] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__python.so\n'}
+[7.113882] (splash_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/splash_interfaces/lib/libsplash_interfaces__python.so" to ""\n'}
+[7.114064] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange.idl\n'}
+[7.114218] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode.idl\n'}
+[7.114344] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode.idl\n'}
+[7.114493] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/msg/SplashMessage.idl\n'}
+[7.114634] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange.srv\n'}
+[7.114768] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange_Request.msg\n'}
+[7.114934] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RequestModeChange_Response.msg\n'}
+[7.115061] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode.srv\n'}
+[7.115196] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode_Request.msg\n'}
+[7.115332] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/RegisterMode_Response.msg\n'}
+[7.115476] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode.srv\n'}
+[7.115609] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode_Request.msg\n'}
+[7.115736] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/srv/UnregisterMode_Response.msg\n'}
+[7.115860] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/msg/SplashMessage.msg\n'}
+[7.115977] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/package_run_dependencies/splash_interfaces\n'}
+[7.116124] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/parent_prefix_path/splash_interfaces\n'}
+[7.116254] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/ament_prefix_path.sh\n'}
+[7.116388] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/ament_prefix_path.dsv\n'}
+[7.116531] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/path.sh\n'}
+[7.116671] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/environment/path.dsv\n'}
+[7.116806] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.bash\n'}
+[7.116940] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.sh\n'}
+[7.117069] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.zsh\n'}
+[7.117207] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/local_setup.dsv\n'}
+[7.117336] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.dsv\n'}
+[7.117451] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/ament_index/resource_index/packages/splash_interfaces\n'}
+[7.117592] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_generator_cExport.cmake\n'}
+[7.117709] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.117836] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.117953] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.118073] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[7.118178] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.118316] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_generator_cppExport.cmake\n'}
+[7.118454] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.118585] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.118739] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[7.118876] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.119003] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[7.119133] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.119278] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.119435] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.119581] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.119748] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.119884] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.119996] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfacesConfig.cmake\n'}
+[7.120117] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/cmake/splash_interfacesConfig-version.cmake\n'}
+[7.120223] (splash_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/splash_interfaces/share/splash_interfaces/package.xml\n'}
+[7.121822] (splash_interfaces) CommandEnded: {'returncode': 0}
+[7.154938] (torcs_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/torcs_interfaces/libtorcs_interfaces__python.so\x1b[0m\n'}
+[7.205138] (torcs_interfaces) StdoutLine: {'line': b'[ 84%] Built target torcs_interfaces__python\n'}
+[7.210264] (-) TimerEvent: {}
+[7.218070] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.218278] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.218459] (torcs_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target torcs_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.232227] (splash_interfaces) JobEnded: {'identifier': 'splash_interfaces', 'rc': 0}
+[7.233609] (srl) JobStarted: {'identifier': 'srl'}
+[7.238523] (torcs_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/torcs_interfaces/_torcs_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.242530] (torcs_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/torcs_interfaces/_torcs_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.243639] (torcs_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/torcs_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/torcs_interfaces/_torcs_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.310442] (-) TimerEvent: {}
+[7.327319] (torcs_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.369034] (torcs_interfaces) StdoutLine: {'line': b'[ 94%] Built target torcs_interfaces__rosidl_typesupport_c__pyext\n'}
+[7.372247] (torcs_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.373379] (torcs_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.410519] (-) TimerEvent: {}
+[7.411861] (torcs_interfaces) StdoutLine: {'line': b'[100%] Built target torcs_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[7.435376] (torcs_interfaces) StdoutLine: {'line': b'[100%] Built target torcs_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.473439] (torcs_interfaces) CommandEnded: {'returncode': 0}
+[7.477394] (srl) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/srl', 'build', '--build-base', '/home/rtos/dev_ws/build/srl/build', 'install', '--prefix', '/home/rtos/dev_ws/install/srl', '--record', '/home/rtos/dev_ws/build/srl/install.log', '--single-version-externally-managed'], 'cwd': '/home/rtos/dev_ws/src/srl', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rtos', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1593', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rtos/dev_ws/install/splash_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rtos', 'OLDPWD': '/home/rtos/dev_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1410', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1974', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rtos', 'JOURNAL_STREAM': '9:34722', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rtos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636', 'INVOCATION_ID': 'e65ff092ed7d406a81a658fde48f455d', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rtos/dev_ws/build/srl', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/rtos/dev_ws/install/splash_interfaces'}, 'shell': False}
+[7.510627] (-) TimerEvent: {}
+[7.521560] (torcs_interfaces) JobProgress: {'identifier': 'torcs_interfaces', 'progress': 'install'}
+[7.521897] (torcs_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rtos/dev_ws/build/torcs_interfaces'], 'cwd': '/home/rtos/dev_ws/build/torcs_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rtos'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1593'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rtos'), ('OLDPWD', '/home/rtos/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1410'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1974'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rtos'), ('JOURNAL_STREAM', '9:34722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rtos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636'), ('INVOCATION_ID', 'e65ff092ed7d406a81a658fde48f455d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rtos/dev_ws/build/torcs_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.531591] (torcs_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.532056] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/rosidl_interfaces/torcs_interfaces\n'}
+[7.532169] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces\n'}
+[7.532263] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg\n'}
+[7.532363] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail\n'}
+[7.532455] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__struct.h\n'}
+[7.532548] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__struct.h\n'}
+[7.532636] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__type_support.h\n'}
+[7.532724] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__functions.h\n'}
+[7.532810] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__type_support.h\n'}
+[7.532898] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__functions.c\n'}
+[7.532982] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__functions.c\n'}
+[7.533040] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__functions.h\n'}
+[7.533126] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.533184] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_ctrl.h\n'}
+[7.533276] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_sensors.h\n'}
+[7.533335] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/library_path.sh\n'}
+[7.533391] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/library_path.dsv\n'}
+[7.533482] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_generator_c.so\n'}
+[7.533800] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_generator_c.so" to ""\n'}
+[7.533903] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces\n'}
+[7.534033] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg\n'}
+[7.534128] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail\n'}
+[7.534217] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[7.534275] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_fastrtps_c.h\n'}
+[7.534332] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.534421] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[7.534754] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.534845] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces\n'}
+[7.534975] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg\n'}
+[7.535058] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail\n'}
+[7.535148] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/dds_fastrtps\n'}
+[7.535235] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.535293] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.535353] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.535452] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.535792] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.535885] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces\n'}
+[7.536016] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg\n'}
+[7.536102] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail\n'}
+[7.536166] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__type_support.c\n'}
+[7.536254] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_introspection_c.h\n'}
+[7.536341] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[7.536426] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__type_support.c\n'}
+[7.536483] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.536566] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[7.537086] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.537212] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_c.so\n'}
+[7.537525] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[7.537682] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces\n'}
+[7.537774] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg\n'}
+[7.537873] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail\n'}
+[7.537953] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__traits.hpp\n'}
+[7.538042] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__builder.hpp\n'}
+[7.538120] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__traits.hpp\n'}
+[7.538199] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__struct.hpp\n'}
+[7.538261] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__struct.hpp\n'}
+[7.538376] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__builder.hpp\n'}
+[7.538450] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_sensors.hpp\n'}
+[7.538524] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_ctrl.hpp\n'}
+[7.538602] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces\n'}
+[7.538663] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg\n'}
+[7.538721] (torcs_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail\n'}
+[7.538798] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__type_support.cpp\n'}
+[7.538857] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.538917] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.538974] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__type_support.cpp\n'}
+[7.539030] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[7.539165] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.539271] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_cpp.so\n'}
+[7.539659] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[7.539750] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/pythonpath.sh\n'}
+[7.539873] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/pythonpath.dsv\n'}
+[7.540048] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/__init__.py\n'}
+[7.577190] (torcs_interfaces) StdoutLine: {'line': b"Compiling '/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/__init__.py'...\n"}
+[7.581002] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg\n'}
+[7.581172] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_sensors_s.c\n'}
+[7.581299] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_ctrl_s.c\n'}
+[7.581434] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/__init__.py\n'}
+[7.581520] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_sensors.py\n'}
+[7.581585] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_ctrl.py\n'}
+[7.581696] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.582146] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.582365] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.582867] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.583059] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.583544] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.583694] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__python.so\n'}
+[7.583989] (torcs_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__python.so" to ""\n'}
+[7.584116] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSSensors.idl\n'}
+[7.584216] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSCtrl.idl\n'}
+[7.584339] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSSensors.msg\n'}
+[7.584450] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSCtrl.msg\n'}
+[7.584538] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/package_run_dependencies/torcs_interfaces\n'}
+[7.584674] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/parent_prefix_path/torcs_interfaces\n'}
+[7.584791] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/ament_prefix_path.sh\n'}
+[7.584911] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/ament_prefix_path.dsv\n'}
+[7.585024] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/path.sh\n'}
+[7.585135] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/path.dsv\n'}
+[7.585246] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.bash\n'}
+[7.585356] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.sh\n'}
+[7.585466] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.zsh\n'}
+[7.585573] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.dsv\n'}
+[7.585679] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.dsv\n'}
+[7.585818] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/packages/torcs_interfaces\n'}
+[7.585998] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_generator_cExport.cmake\n'}
+[7.586121] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.586287] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.586410] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.586567] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[7.586713] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.586868] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_generator_cppExport.cmake\n'}
+[7.587035] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.587154] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.587313] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[7.587441] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.587572] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[7.587666] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.587789] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.587901] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.588007] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.588121] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.588225] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.588333] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfacesConfig.cmake\n'}
+[7.588411] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfacesConfig-version.cmake\n'}
+[7.588520] (torcs_interfaces) StdoutLine: {'line': b'-- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.xml\n'}
+[7.590354] (torcs_interfaces) CommandEnded: {'returncode': 0}
+[7.610751] (-) TimerEvent: {}
+[7.659347] (torcs_interfaces) JobEnded: {'identifier': 'torcs_interfaces', 'rc': 0}
+[7.660674] (torcs_client) JobStarted: {'identifier': 'torcs_client'}
+[7.677678] (srl) StdoutLine: {'line': b'running egg_info\n'}
+[7.678154] (srl) StdoutLine: {'line': b'creating ../../build/srl/srl.egg-info\n'}
+[7.678383] (srl) StdoutLine: {'line': b'writing ../../build/srl/srl.egg-info/PKG-INFO\n'}
+[7.678582] (srl) StdoutLine: {'line': b'writing dependency_links to ../../build/srl/srl.egg-info/dependency_links.txt\n'}
+[7.678724] (srl) StdoutLine: {'line': b'writing entry points to ../../build/srl/srl.egg-info/entry_points.txt\n'}
+[7.678839] (srl) StdoutLine: {'line': b'writing requirements to ../../build/srl/srl.egg-info/requires.txt\n'}
+[7.678951] (srl) StdoutLine: {'line': b'writing top-level names to ../../build/srl/srl.egg-info/top_level.txt\n'}
+[7.679638] (srl) StdoutLine: {'line': b"writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'\n"}
+[7.707393] (srl) StdoutLine: {'line': b"reading manifest file '../../build/srl/srl.egg-info/SOURCES.txt'\n"}
+[7.707953] (srl) StdoutLine: {'line': b"writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'\n"}
+[7.708172] (srl) StdoutLine: {'line': b'running build\n'}
+[7.708379] (srl) StdoutLine: {'line': b'running build_py\n'}
+[7.708552] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/srl/build\n'}
+[7.708678] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/srl/build/lib\n'}
+[7.708806] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[7.708952] (srl) StdoutLine: {'line': b'copying srl/__init__.py -> /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[7.709074] (srl) StdoutLine: {'line': b'copying srl/mode_manager.py -> /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[7.709198] (srl) StdoutLine: {'line': b'copying srl/rate_controller.py -> /home/rtos/dev_ws/build/srl/build/lib/srl\n'}
+[7.709345] (srl) StdoutLine: {'line': b'running install\n'}
+[7.709468] (srl) StdoutLine: {'line': b'running install_lib\n'}
+[7.710018] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[7.710196] (srl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/srl/build/lib/srl/__init__.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[7.710362] (srl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/srl/build/lib/srl/mode_manager.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[7.710491] (srl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/srl/build/lib/srl/rate_controller.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl\n'}
+[7.710667] (srl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/__init__.py to __init__.cpython-38.pyc\n'}
+[7.710795] (-) TimerEvent: {}
+[7.711744] (srl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/mode_manager.py to mode_manager.cpython-38.pyc\n'}
+[7.712388] (srl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/rate_controller.py to rate_controller.cpython-38.pyc\n'}
+[7.712737] (srl) StdoutLine: {'line': b'running install_data\n'}
+[7.713108] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/share/ament_index\n'}
+[7.713296] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index\n'}
+[7.713460] (srl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages\n'}
+[7.713586] (srl) StdoutLine: {'line': b'copying resource/srl -> /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages\n'}
+[7.713708] (srl) StdoutLine: {'line': b'copying package.xml -> /home/rtos/dev_ws/install/srl/share/srl\n'}
+[7.713825] (srl) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.714611] (srl) StdoutLine: {'line': b'Copying ../../build/srl/srl.egg-info to /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info\n'}
+[7.715301] (srl) StdoutLine: {'line': b'running install_scripts\n'}
+[7.730600] (srl) StdoutLine: {'line': b"writing list of installed files to '/home/rtos/dev_ws/build/srl/install.log'\n"}
+[7.810904] (-) TimerEvent: {}
+[7.865411] (srl) CommandEnded: {'returncode': 0}
+[7.872195] (srl) JobEnded: {'identifier': 'srl', 'rc': 0}
+[7.873617] (scl) JobStarted: {'identifier': 'scl'}
+[7.879673] (torcs_client) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/torcs_client', 'build', '--build-base', '/home/rtos/dev_ws/build/torcs_client/build', 'install', '--prefix', '/home/rtos/dev_ws/install/torcs_client', '--record', '/home/rtos/dev_ws/build/torcs_client/install.log', '--single-version-externally-managed'], 'cwd': '/home/rtos/dev_ws/src/ros2-torcs-client', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rtos', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1593', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rtos/dev_ws/install/torcs_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rtos', 'OLDPWD': '/home/rtos/dev_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1410', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1974', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rtos', 'JOURNAL_STREAM': '9:34722', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rtos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636', 'INVOCATION_ID': 'e65ff092ed7d406a81a658fde48f455d', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rtos/dev_ws/install/torcs_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rtos/dev_ws/build/torcs_client', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/rtos/dev_ws/install/torcs_interfaces'}, 'shell': False}
+[7.911070] (-) TimerEvent: {}
+[8.011459] (-) TimerEvent: {}
+[8.061303] (torcs_client) StdoutLine: {'line': b'running egg_info\n'}
+[8.061709] (torcs_client) StdoutLine: {'line': b'creating ../../build/torcs_client/torcs_client.egg-info\n'}
+[8.061873] (torcs_client) StdoutLine: {'line': b'writing ../../build/torcs_client/torcs_client.egg-info/PKG-INFO\n'}
+[8.062045] (torcs_client) StdoutLine: {'line': b'writing dependency_links to ../../build/torcs_client/torcs_client.egg-info/dependency_links.txt\n'}
+[8.062195] (torcs_client) StdoutLine: {'line': b'writing entry points to ../../build/torcs_client/torcs_client.egg-info/entry_points.txt\n'}
+[8.062345] (torcs_client) StdoutLine: {'line': b'writing requirements to ../../build/torcs_client/torcs_client.egg-info/requires.txt\n'}
+[8.062419] (torcs_client) StdoutLine: {'line': b'writing top-level names to ../../build/torcs_client/torcs_client.egg-info/top_level.txt\n'}
+[8.063261] (torcs_client) StdoutLine: {'line': b"writing manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'\n"}
+[8.083470] (scl) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/scl', 'build', '--build-base', '/home/rtos/dev_ws/build/scl/build', 'install', '--prefix', '/home/rtos/dev_ws/install/scl', '--record', '/home/rtos/dev_ws/build/scl/install.log', '--single-version-externally-managed'], 'cwd': '/home/rtos/dev_ws/src/scl', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rtos', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1593', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rtos/dev_ws/install/splash_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rtos', 'OLDPWD': '/home/rtos/dev_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1410', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1974', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rtos', 'JOURNAL_STREAM': '9:34722', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rtos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636', 'INVOCATION_ID': 'e65ff092ed7d406a81a658fde48f455d', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rtos/dev_ws/build/scl', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/rtos/dev_ws/install/splash_interfaces'}, 'shell': False}
+[8.091092] (torcs_client) StdoutLine: {'line': b"reading manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'\n"}
+[8.091701] (torcs_client) StdoutLine: {'line': b"writing manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'\n"}
+[8.091890] (torcs_client) StdoutLine: {'line': b'running build\n'}
+[8.092075] (torcs_client) StdoutLine: {'line': b'running build_py\n'}
+[8.092157] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/torcs_client/build\n'}
+[8.092254] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/torcs_client/build/lib\n'}
+[8.092348] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client\n'}
+[8.092439] (torcs_client) StdoutLine: {'line': b'copying torcs_client/torcs_client.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client\n'}
+[8.092505] (torcs_client) StdoutLine: {'line': b'copying torcs_client/__init__.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client\n'}
+[8.092588] (torcs_client) StdoutLine: {'line': b'copying torcs_client/main.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client\n'}
+[8.092649] (torcs_client) StdoutLine: {'line': b'copying torcs_client/simple_parser.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client\n'}
+[8.092708] (torcs_client) StdoutLine: {'line': b'running install\n'}
+[8.093171] (torcs_client) StdoutLine: {'line': b'running install_lib\n'}
+[8.093906] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client\n'}
+[8.093999] (torcs_client) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/torcs_client.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client\n'}
+[8.094079] (torcs_client) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/__init__.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client\n'}
+[8.094156] (torcs_client) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/main.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client\n'}
+[8.094234] (torcs_client) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/simple_parser.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client\n'}
+[8.094619] (torcs_client) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/torcs_client.py to torcs_client.cpython-38.pyc\n'}
+[8.097469] (torcs_client) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/__init__.py to __init__.cpython-38.pyc\n'}
+[8.097629] (torcs_client) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/main.py to main.cpython-38.pyc\n'}
+[8.097795] (torcs_client) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/simple_parser.py to simple_parser.cpython-38.pyc\n'}
+[8.098165] (torcs_client) StdoutLine: {'line': b'running install_data\n'}
+[8.098566] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/torcs_client/share/ament_index\n'}
+[8.098675] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index\n'}
+[8.098745] (torcs_client) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index/packages\n'}
+[8.098864] (torcs_client) StdoutLine: {'line': b'copying resource/torcs_client -> /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index/packages\n'}
+[8.098936] (torcs_client) StdoutLine: {'line': b'copying package.xml -> /home/rtos/dev_ws/install/torcs_client/share/torcs_client\n'}
+[8.098997] (torcs_client) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.100144] (torcs_client) StdoutLine: {'line': b'Copying ../../build/torcs_client/torcs_client.egg-info to /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client-0.0.0-py3.8.egg-info\n'}
+[8.100831] (torcs_client) StdoutLine: {'line': b'running install_scripts\n'}
+[8.111546] (-) TimerEvent: {}
+[8.115410] (torcs_client) StdoutLine: {'line': b'Installing main script to /home/rtos/dev_ws/install/torcs_client/lib/torcs_client\n'}
+[8.115736] (torcs_client) StdoutLine: {'line': b"writing list of installed files to '/home/rtos/dev_ws/build/torcs_client/install.log'\n"}
+[8.136520] (torcs_client) CommandEnded: {'returncode': 0}
+[8.142005] (torcs_client) JobEnded: {'identifier': 'torcs_client', 'rc': 0}
+[8.211635] (-) TimerEvent: {}
+[8.264458] (scl) StdoutLine: {'line': b'running egg_info\n'}
+[8.264840] (scl) StdoutLine: {'line': b'creating ../../build/scl/scl.egg-info\n'}
+[8.264987] (scl) StdoutLine: {'line': b'writing ../../build/scl/scl.egg-info/PKG-INFO\n'}
+[8.265184] (scl) StdoutLine: {'line': b'writing dependency_links to ../../build/scl/scl.egg-info/dependency_links.txt\n'}
+[8.265336] (scl) StdoutLine: {'line': b'writing entry points to ../../build/scl/scl.egg-info/entry_points.txt\n'}
+[8.265483] (scl) StdoutLine: {'line': b'writing requirements to ../../build/scl/scl.egg-info/requires.txt\n'}
+[8.265559] (scl) StdoutLine: {'line': b'writing top-level names to ../../build/scl/scl.egg-info/top_level.txt\n'}
+[8.266385] (scl) StdoutLine: {'line': b"writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'\n"}
+[8.293223] (scl) StdoutLine: {'line': b"reading manifest file '../../build/scl/scl.egg-info/SOURCES.txt'\n"}
+[8.293850] (scl) StdoutLine: {'line': b"writing manifest file '../../build/scl/scl.egg-info/SOURCES.txt'\n"}
+[8.294012] (scl) StdoutLine: {'line': b'running build\n'}
+[8.294087] (scl) StdoutLine: {'line': b'running build_py\n'}
+[8.294226] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build\n'}
+[8.294380] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build/lib\n'}
+[8.294563] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.294680] (scl) StdoutLine: {'line': b'copying scl/channel.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.294780] (scl) StdoutLine: {'line': b'copying scl/link.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.294868] (scl) StdoutLine: {'line': b'copying scl/exceptions.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.294929] (scl) StdoutLine: {'line': b'copying scl/sthread.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295017] (scl) StdoutLine: {'line': b'copying scl/build_unit.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295105] (scl) StdoutLine: {'line': b'copying scl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295193] (scl) StdoutLine: {'line': b'copying scl/components.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295252] (scl) StdoutLine: {'line': b'copying scl/clink.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295342] (scl) StdoutLine: {'line': b'copying scl/executor.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295401] (scl) StdoutLine: {'line': b'copying scl/factory.py -> /home/rtos/dev_ws/build/scl/build/lib/scl\n'}
+[8.295495] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[8.295582] (scl) StdoutLine: {'line': b'copying scl/impl/msg_converter.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[8.295668] (scl) StdoutLine: {'line': b'copying scl/impl/__init__.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[8.295753] (scl) StdoutLine: {'line': b'copying scl/impl/singleton.py -> /home/rtos/dev_ws/build/scl/build/lib/scl/impl\n'}
+[8.296036] (scl) StdoutLine: {'line': b'running install\n'}
+[8.296659] (scl) StdoutLine: {'line': b'running install_lib\n'}
+[8.297407] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.297520] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/channel.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.297639] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/link.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.297784] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/exceptions.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.297883] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/sthread.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.298000] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[8.298088] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/msg_converter.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[8.298176] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[8.298238] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/impl/singleton.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl\n'}
+[8.298325] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/build_unit.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.298411] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/__init__.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.298501] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/components.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.298584] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/clink.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.298667] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/executor.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.298764] (scl) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/scl/build/lib/scl/factory.py -> /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl\n'}
+[8.299156] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/channel.py to channel.cpython-38.pyc\n'}
+[8.300933] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/link.py to link.cpython-38.pyc\n'}
+[8.301166] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/exceptions.py to exceptions.cpython-38.pyc\n'}
+[8.301565] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/sthread.py to sthread.cpython-38.pyc\n'}
+[8.301793] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/msg_converter.py to msg_converter.cpython-38.pyc\n'}
+[8.302764] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/__init__.py to __init__.cpython-38.pyc\n'}
+[8.302918] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/impl/singleton.py to singleton.cpython-38.pyc\n'}
+[8.303132] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/build_unit.py to build_unit.cpython-38.pyc\n'}
+[8.303547] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/__init__.py to __init__.cpython-38.pyc\n'}
+[8.303717] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/components.py to components.cpython-38.pyc\n'}
+[8.305621] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/clink.py to clink.cpython-38.pyc\n'}
+[8.306247] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/executor.py to executor.cpython-38.pyc\n'}
+[8.306557] (scl) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl/factory.py to factory.cpython-38.pyc\n'}
+[8.306798] (scl) StdoutLine: {'line': b'running install_data\n'}
+[8.307165] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/share/ament_index\n'}
+[8.307304] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index\n'}
+[8.307365] (scl) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages\n'}
+[8.307465] (scl) StdoutLine: {'line': b'copying resource/scl -> /home/rtos/dev_ws/install/scl/share/ament_index/resource_index/packages\n'}
+[8.307570] (scl) StdoutLine: {'line': b'copying package.xml -> /home/rtos/dev_ws/install/scl/share/scl\n'}
+[8.307629] (scl) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.308666] (scl) StdoutLine: {'line': b'Copying ../../build/scl/scl.egg-info to /home/rtos/dev_ws/install/scl/lib/python3.8/site-packages/scl-0.0.0-py3.8.egg-info\n'}
+[8.309346] (scl) StdoutLine: {'line': b'running install_scripts\n'}
+[8.311692] (-) TimerEvent: {}
+[8.324018] (scl) StdoutLine: {'line': b"writing list of installed files to '/home/rtos/dev_ws/build/scl/install.log'\n"}
+[8.342878] (scl) CommandEnded: {'returncode': 0}
+[8.348603] (scl) JobEnded: {'identifier': 'scl', 'rc': 0}
+[8.349035] (lkas5) JobStarted: {'identifier': 'lkas5'}
+[8.411886] (-) TimerEvent: {}
+[8.512313] (-) TimerEvent: {}
+[8.556351] (lkas5) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/lkas5', 'build', '--build-base', '/home/rtos/dev_ws/build/lkas5/build', 'install', '--prefix', '/home/rtos/dev_ws/install/lkas5', '--record', '/home/rtos/dev_ws/build/lkas5/install.log', '--single-version-externally-managed'], 'cwd': '/home/rtos/dev_ws/src/lkas5', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rtos', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1593', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rtos/dev_ws/install/splash_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rtos', 'OLDPWD': '/home/rtos/dev_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1410', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1974', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rtos', 'JOURNAL_STREAM': '9:34722', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rtos', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rtosbych:@/tmp/.ICE-unix/1636,unix/rtosbych:/tmp/.ICE-unix/1636', 'INVOCATION_ID': 'e65ff092ed7d406a81a658fde48f455d', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/home/rtos/dev_ws/install/splash_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e3bd92e7-a09d-4a3f-aa29-c6f5207a1994', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rtos/dev_ws/build/lkas5', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages:/home/rtos/dev_ws/install/scl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/rtos/dev_ws/install/splash_interfaces'}, 'shell': False}
+[8.612414] (-) TimerEvent: {}
+[8.712743] (-) TimerEvent: {}
+[8.738554] (lkas5) StdoutLine: {'line': b'running egg_info\n'}
+[8.739034] (lkas5) StdoutLine: {'line': b'creating ../../build/lkas5/lkas5.egg-info\n'}
+[8.739220] (lkas5) StdoutLine: {'line': b'writing ../../build/lkas5/lkas5.egg-info/PKG-INFO\n'}
+[8.739460] (lkas5) StdoutLine: {'line': b'writing dependency_links to ../../build/lkas5/lkas5.egg-info/dependency_links.txt\n'}
+[8.739658] (lkas5) StdoutLine: {'line': b'writing entry points to ../../build/lkas5/lkas5.egg-info/entry_points.txt\n'}
+[8.739853] (lkas5) StdoutLine: {'line': b'writing requirements to ../../build/lkas5/lkas5.egg-info/requires.txt\n'}
+[8.739982] (lkas5) StdoutLine: {'line': b'writing top-level names to ../../build/lkas5/lkas5.egg-info/top_level.txt\n'}
+[8.740894] (lkas5) StdoutLine: {'line': b"writing manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'\n"}
+[8.768686] (lkas5) StdoutLine: {'line': b"reading manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'\n"}
+[8.769404] (lkas5) StdoutLine: {'line': b"writing manifest file '../../build/lkas5/lkas5.egg-info/SOURCES.txt'\n"}
+[8.769585] (lkas5) StdoutLine: {'line': b'running build\n'}
+[8.769744] (lkas5) StdoutLine: {'line': b'running build_py\n'}
+[8.769935] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build\n'}
+[8.770090] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib\n'}
+[8.770217] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib/lkas5\n'}
+[8.770378] (lkas5) StdoutLine: {'line': b'copying lkas5/__init__.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5\n'}
+[8.770503] (lkas5) StdoutLine: {'line': b'copying lkas5/default_build_unit_exec.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5\n'}
+[8.770620] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash\n'}
+[8.770768] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/__init__.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash\n'}
+[8.770924] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771069] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/source_angle_z.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771218] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/processing_accel.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771364] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/__init__.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771523] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/source_linear_x.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771681] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/sink_steering.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771837] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/source_distance_mid.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.771992] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/fusion_operator_1.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.772130] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/processing_steering.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.772297] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/component/sink_accel.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component\n'}
+[8.772461] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/stream_port\n'}
+[8.772586] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/stream_port/__init__.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/stream_port\n'}
+[8.772746] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/factory\n'}
+[8.772872] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/factory/__init__.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/factory\n'}
+[8.773016] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/build_unit\n'}
+[8.773154] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/build_unit/default_build_unit.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/build_unit\n'}
+[8.773305] (lkas5) StdoutLine: {'line': b'copying lkas5/splash/build_unit/__init__.py -> /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/build_unit\n'}
+[8.773762] (lkas5) StdoutLine: {'line': b'running install\n'}
+[8.774487] (lkas5) StdoutLine: {'line': b'running install_lib\n'}
+[8.775269] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5\n'}
+[8.775440] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/__init__.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5\n'}
+[8.775636] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/default_build_unit_exec.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5\n'}
+[8.775793] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash\n'}
+[8.775952] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776096] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/source_angle_z.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776229] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/processing_accel.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776397] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/__init__.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776551] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/source_linear_x.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776702] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/sink_steering.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776846] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/source_distance_mid.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.776992] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/fusion_operator_1.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.777144] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/processing_steering.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.777295] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/component/sink_accel.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component\n'}
+[8.777444] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/__init__.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash\n'}
+[8.777591] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/stream_port\n'}
+[8.777752] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/stream_port/__init__.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/stream_port\n'}
+[8.777884] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/factory\n'}
+[8.778047] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/factory/__init__.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/factory\n'}
+[8.778199] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/build_unit\n'}
+[8.778329] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/build_unit/default_build_unit.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/build_unit\n'}
+[8.778460] (lkas5) StdoutLine: {'line': b'copying /home/rtos/dev_ws/build/lkas5/build/lib/lkas5/splash/build_unit/__init__.py -> /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/build_unit\n'}
+[8.778711] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/__init__.py to __init__.cpython-38.pyc\n'}
+[8.779774] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/default_build_unit_exec.py to default_build_unit_exec.cpython-38.pyc\n'}
+[8.780027] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/source_angle_z.py to source_angle_z.cpython-38.pyc\n'}
+[8.780407] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/processing_accel.py to processing_accel.cpython-38.pyc\n'}
+[8.780846] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/__init__.py to __init__.cpython-38.pyc\n'}
+[8.781029] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/source_linear_x.py to source_linear_x.cpython-38.pyc\n'}
+[8.781381] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/sink_steering.py to sink_steering.cpython-38.pyc\n'}
+[8.781776] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/source_distance_mid.py to source_distance_mid.cpython-38.pyc\n'}
+[8.782142] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/fusion_operator_1.py to fusion_operator_1.cpython-38.pyc\n'}
+[8.782465] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/processing_steering.py to processing_steering.cpython-38.pyc\n'}
+[8.783034] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/component/sink_accel.py to sink_accel.cpython-38.pyc\n'}
+[8.783992] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/__init__.py to __init__.cpython-38.pyc\n'}
+[8.784189] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/stream_port/__init__.py to __init__.cpython-38.pyc\n'}
+[8.784886] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/factory/__init__.py to __init__.cpython-38.pyc\n'}
+[8.785073] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/build_unit/default_build_unit.py to default_build_unit.cpython-38.pyc\n'}
+[8.785694] (lkas5) StdoutLine: {'line': b'byte-compiling /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5/splash/build_unit/__init__.py to __init__.cpython-38.pyc\n'}
+[8.785880] (lkas5) StdoutLine: {'line': b'running install_data\n'}
+[8.786309] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/share/ament_index\n'}
+[8.786492] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/share/ament_index/resource_index\n'}
+[8.786630] (lkas5) StdoutLine: {'line': b'creating /home/rtos/dev_ws/install/lkas5/share/ament_index/resource_index/packages\n'}
+[8.786799] (lkas5) StdoutLine: {'line': b'copying resource/lkas5 -> /home/rtos/dev_ws/install/lkas5/share/ament_index/resource_index/packages\n'}
+[8.786936] (lkas5) StdoutLine: {'line': b'copying package.xml -> /home/rtos/dev_ws/install/lkas5/share/lkas5\n'}
+[8.787063] (lkas5) StdoutLine: {'line': b'copying launch/splash.launch.py -> /home/rtos/dev_ws/install/lkas5/share/lkas5\n'}
+[8.787187] (lkas5) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.788337] (lkas5) StdoutLine: {'line': b'Copying ../../build/lkas5/lkas5.egg-info to /home/rtos/dev_ws/install/lkas5/lib/python3.8/site-packages/lkas5-0.0.0-py3.8.egg-info\n'}
+[8.789099] (lkas5) StdoutLine: {'line': b'running install_scripts\n'}
+[8.803871] (lkas5) StdoutLine: {'line': b'Installing default_build_unit script to /home/rtos/dev_ws/install/lkas5/lib/lkas5\n'}
+[8.804110] (lkas5) StdoutLine: {'line': b'Installing splash_server script to /home/rtos/dev_ws/install/lkas5/lib/lkas5\n'}
+[8.804715] (lkas5) StdoutLine: {'line': b"writing list of installed files to '/home/rtos/dev_ws/build/lkas5/install.log'\n"}
+[8.812835] (-) TimerEvent: {}
+[8.825619] (lkas5) CommandEnded: {'returncode': 0}
+[8.831103] (lkas5) JobEnded: {'identifier': 'lkas5', 'rc': 0}
+[8.831696] (-) EventReactorShutdown: {}

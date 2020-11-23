@@ -1,0 +1,5 @@
+  File "/home/rtos/dev_ws/install/Torcs_5/lib/python3.8/site-packages/Torcs_5/splash/component/sink_steer.py", line 4
+    from std_msgs.msg import
+                            ^
+SyntaxError: invalid syntax
+

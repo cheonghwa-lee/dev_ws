@@ -1,0 +1,157 @@
+[0.019s] Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/torcs_interfaces -- -j8 -l8
+[0.079s] -- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.105s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.105s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.280s] -- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.285s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.292s] -- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.430s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.467s] -- Found std_msgs: 2.0.3 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.530s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") 
+[0.692s] -- Found ament_cmake_ros: 0.9.0 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.873s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.937s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.971s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3.5") 
+[0.971s] -- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.999s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.999s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[0.999s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.038s] -- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.057s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.065s] -- Added test 'lint_cmake' to check CMake code style
+[1.069s] -- Added test 'xmllint' to check XML markup files
+[1.074s] -- Configuring done
+[1.136s] -- Generating done
+[1.139s] -- Build files have been written to: /home/rtos/dev_ws/build/torcs_interfaces
+[1.175s] [  2%] Built target torcs_interfaces__cpp
+[1.187s] [ 12%] Built target torcs_interfaces__rosidl_generator_c
+[1.209s] [ 23%] Built target torcs_interfaces__rosidl_typesupport_introspection_cpp
+[1.217s] [ 33%] Built target torcs_interfaces__rosidl_typesupport_cpp
+[1.217s] [ 43%] Built target torcs_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.228s] [ 53%] Built target torcs_interfaces__rosidl_typesupport_c
+[1.233s] [ 64%] Built target torcs_interfaces__rosidl_typesupport_introspection_c
+[1.252s] [ 74%] Built target torcs_interfaces__rosidl_typesupport_fastrtps_c
+[1.272s] [ 74%] Built target torcs_interfaces
+[1.291s] [ 76%] Built target torcs_interfaces__py
+[1.318s] [ 84%] Built target torcs_interfaces__python
+[1.347s] [ 89%] Built target torcs_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.352s] [100%] Built target torcs_interfaces__rosidl_typesupport_c__pyext
+[1.352s] [100%] Built target torcs_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.363s] Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --build /home/rtos/dev_ws/build/torcs_interfaces -- -j8 -l8
+[1.430s] Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/torcs_interfaces
+[1.438s] -- Install configuration: ""
+[1.438s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/rosidl_interfaces/torcs_interfaces
+[1.438s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces
+[1.438s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg
+[1.438s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail
+[1.438s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__struct.h
+[1.439s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__struct.h
+[1.439s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__type_support.h
+[1.439s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__functions.h
+[1.439s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__type_support.h
+[1.439s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__functions.c
+[1.439s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__functions.c
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__functions.h
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_ctrl.h
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_sensors.h
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/library_path.sh
+[1.440s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/library_path.dsv
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_generator_c.so
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces
+[1.440s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_fastrtps_c.h
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_fastrtps_c.h
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/dds_fastrtps
+[1.441s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_fastrtps_cpp.hpp
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__type_support.c
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_introspection_c.h
+[1.442s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_introspection_c.h
+[1.443s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__type_support.c
+[1.443s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.443s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_introspection_c.so
+[1.443s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_c.so
+[1.443s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces
+[1.443s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__traits.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__builder.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__traits.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__struct.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__struct.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__builder.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_sensors.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/torcs_ctrl.hpp
+[1.444s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__type_support.cpp
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__rosidl_typesupport_introspection_cpp.hpp
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/include/torcs_interfaces/msg/detail/torcs_sensors__type_support.cpp
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__rosidl_typesupport_cpp.so
+[1.445s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/pythonpath.sh
+[1.445s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/pythonpath.dsv
+[1.446s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/__init__.py
+[1.488s] Compiling '/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/__init__.py'...
+[1.495s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg
+[1.495s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_sensors_s.c
+[1.495s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_ctrl_s.c
+[1.495s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/__init__.py
+[1.495s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_sensors.py
+[1.495s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/msg/_torcs_ctrl.py
+[1.496s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.497s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.498s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages/torcs_interfaces/torcs_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.499s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/lib/libtorcs_interfaces__python.so
+[1.500s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSSensors.idl
+[1.500s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSCtrl.idl
+[1.500s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSSensors.msg
+[1.500s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/msg/TORCSCtrl.msg
+[1.500s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/package_run_dependencies/torcs_interfaces
+[1.500s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/parent_prefix_path/torcs_interfaces
+[1.501s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/ament_prefix_path.sh
+[1.501s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/ament_prefix_path.dsv
+[1.501s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/path.sh
+[1.501s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/environment/path.dsv
+[1.501s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.bash
+[1.501s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.sh
+[1.501s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.zsh
+[1.501s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/local_setup.dsv
+[1.502s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.dsv
+[1.502s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/ament_index/resource_index/packages/torcs_interfaces
+[1.502s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_generator_cExport.cmake
+[1.502s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.503s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.503s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.503s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cExport.cmake
+[1.503s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.504s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_generator_cppExport.cmake
+[1.504s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.504s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cppExport.cmake
+[1.505s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.505s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.506s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.506s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfacesConfig.cmake
+[1.506s] -- Up-to-date: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/cmake/torcs_interfacesConfig-version.cmake
+[1.506s] -- Installing: /home/rtos/dev_ws/install/torcs_interfaces/share/torcs_interfaces/package.xml
+[1.509s] Invoked command in '/home/rtos/dev_ws/build/torcs_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rtos/dev_ws/install/torcs_client:/home/rtos/dev_ws/install/lkas5:/home/rtos/dev_ws/install/scl:/home/rtos/dev_ws/install/srl:/opt/ros/foxy /usr/bin/cmake --install /home/rtos/dev_ws/build/torcs_interfaces

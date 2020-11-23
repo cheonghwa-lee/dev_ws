@@ -1,0 +1,39 @@
+[0.245s] Invoking command in '/home/rtos/dev_ws/src/srl': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/srl build --build-base /home/rtos/dev_ws/build/srl/build install --prefix /home/rtos/dev_ws/install/srl --record /home/rtos/dev_ws/build/srl/install.log --single-version-externally-managed
+[0.444s] running egg_info
+[0.445s] creating ../../build/srl/srl.egg-info
+[0.445s] writing ../../build/srl/srl.egg-info/PKG-INFO
+[0.445s] writing dependency_links to ../../build/srl/srl.egg-info/dependency_links.txt
+[0.445s] writing entry points to ../../build/srl/srl.egg-info/entry_points.txt
+[0.445s] writing requirements to ../../build/srl/srl.egg-info/requires.txt
+[0.445s] writing top-level names to ../../build/srl/srl.egg-info/top_level.txt
+[0.446s] writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+[0.474s] reading manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+[0.474s] writing manifest file '../../build/srl/srl.egg-info/SOURCES.txt'
+[0.475s] running build
+[0.475s] running build_py
+[0.475s] creating /home/rtos/dev_ws/build/srl/build
+[0.475s] creating /home/rtos/dev_ws/build/srl/build/lib
+[0.475s] creating /home/rtos/dev_ws/build/srl/build/lib/srl
+[0.475s] copying srl/__init__.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+[0.476s] copying srl/mode_manager.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+[0.476s] copying srl/rate_controller.py -> /home/rtos/dev_ws/build/srl/build/lib/srl
+[0.476s] running install
+[0.476s] running install_lib
+[0.476s] creating /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+[0.477s] copying /home/rtos/dev_ws/build/srl/build/lib/srl/__init__.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+[0.477s] copying /home/rtos/dev_ws/build/srl/build/lib/srl/mode_manager.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+[0.477s] copying /home/rtos/dev_ws/build/srl/build/lib/srl/rate_controller.py -> /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl
+[0.477s] byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/__init__.py to __init__.cpython-38.pyc
+[0.478s] byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/mode_manager.py to mode_manager.cpython-38.pyc
+[0.479s] byte-compiling /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl/rate_controller.py to rate_controller.cpython-38.pyc
+[0.479s] running install_data
+[0.480s] creating /home/rtos/dev_ws/install/srl/share/ament_index
+[0.480s] creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index
+[0.480s] creating /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages
+[0.480s] copying resource/srl -> /home/rtos/dev_ws/install/srl/share/ament_index/resource_index/packages
+[0.480s] copying package.xml -> /home/rtos/dev_ws/install/srl/share/srl
+[0.480s] running install_egg_info
+[0.481s] Copying ../../build/srl/srl.egg-info to /home/rtos/dev_ws/install/srl/lib/python3.8/site-packages/srl-0.0.0-py3.8.egg-info
+[0.482s] running install_scripts
+[0.497s] writing list of installed files to '/home/rtos/dev_ws/build/srl/install.log'
+[0.632s] Invoked command in '/home/rtos/dev_ws/src/srl' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/splash_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/splash_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rtos/dev_ws/install/srl/lib/python3.8/site-packages:/home/rtos/dev_ws/install/splash_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/srl build --build-base /home/rtos/dev_ws/build/srl/build install --prefix /home/rtos/dev_ws/install/srl --record /home/rtos/dev_ws/build/srl/install.log --single-version-externally-managed

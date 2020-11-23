@@ -1,0 +1,9 @@
+{
+  "package_name": "splash_interfaces",
+  "non_idl_tuples": [
+    "/home/rtos/dev_ws/src/splash_interfaces:srv/RequestModeChange.srv",
+    "/home/rtos/dev_ws/src/splash_interfaces:srv/RegisterMode.srv",
+    "/home/rtos/dev_ws/src/splash_interfaces:srv/UnregisterMode.srv",
+    "/home/rtos/dev_ws/src/splash_interfaces:msg/SplashMessage.msg"
+  ]
+}

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from splash_interfaces/msg/SplashMessage.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module splash_interfaces {
+  module msg {
+    struct SplashMessage {
+      std_msgs::msg::Header header;
+
+      string body;
+
+      uint16 freshness;
+    };
+  };
+};

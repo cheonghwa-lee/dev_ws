@@ -1,0 +1,43 @@
+[0.221s] Invoking command in '/home/rtos/dev_ws/src/ros2-torcs-client': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/torcs_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/torcs_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/torcs_client build --build-base /home/rtos/dev_ws/build/torcs_client/build install --prefix /home/rtos/dev_ws/install/torcs_client --record /home/rtos/dev_ws/build/torcs_client/install.log --single-version-externally-managed
+[0.401s] running egg_info
+[0.401s] creating ../../build/torcs_client/torcs_client.egg-info
+[0.401s] writing ../../build/torcs_client/torcs_client.egg-info/PKG-INFO
+[0.401s] writing dependency_links to ../../build/torcs_client/torcs_client.egg-info/dependency_links.txt
+[0.402s] writing entry points to ../../build/torcs_client/torcs_client.egg-info/entry_points.txt
+[0.402s] writing requirements to ../../build/torcs_client/torcs_client.egg-info/requires.txt
+[0.402s] writing top-level names to ../../build/torcs_client/torcs_client.egg-info/top_level.txt
+[0.403s] writing manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'
+[0.430s] reading manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'
+[0.431s] writing manifest file '../../build/torcs_client/torcs_client.egg-info/SOURCES.txt'
+[0.431s] running build
+[0.431s] running build_py
+[0.432s] creating /home/rtos/dev_ws/build/torcs_client/build
+[0.432s] creating /home/rtos/dev_ws/build/torcs_client/build/lib
+[0.432s] creating /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.432s] copying torcs_client/torcs_client.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.432s] copying torcs_client/__init__.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.432s] copying torcs_client/main.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.432s] copying torcs_client/simple_parser.py -> /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client
+[0.432s] running install
+[0.433s] running install_lib
+[0.433s] creating /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.433s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/torcs_client.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.433s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/__init__.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.434s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/main.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.434s] copying /home/rtos/dev_ws/build/torcs_client/build/lib/torcs_client/simple_parser.py -> /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client
+[0.434s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/torcs_client.py to torcs_client.cpython-38.pyc
+[0.437s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/__init__.py to __init__.cpython-38.pyc
+[0.437s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/main.py to main.cpython-38.pyc
+[0.437s] byte-compiling /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client/simple_parser.py to simple_parser.cpython-38.pyc
+[0.438s] running install_data
+[0.438s] creating /home/rtos/dev_ws/install/torcs_client/share/ament_index
+[0.438s] creating /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index
+[0.438s] creating /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index/packages
+[0.438s] copying resource/torcs_client -> /home/rtos/dev_ws/install/torcs_client/share/ament_index/resource_index/packages
+[0.438s] copying package.xml -> /home/rtos/dev_ws/install/torcs_client/share/torcs_client
+[0.438s] running install_egg_info
+[0.440s] Copying ../../build/torcs_client/torcs_client.egg-info to /home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages/torcs_client-0.0.0-py3.8.egg-info
+[0.440s] running install_scripts
+[0.455s] Installing main script to /home/rtos/dev_ws/install/torcs_client/lib/torcs_client
+[0.455s] writing list of installed files to '/home/rtos/dev_ws/build/torcs_client/install.log'
+[0.476s] Invoked command in '/home/rtos/dev_ws/src/ros2-torcs-client' returned '0': AMENT_PREFIX_PATH=/home/rtos/dev_ws/install/torcs_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rtos/dev_ws/install/torcs_interfaces LD_LIBRARY_PATH=/home/rtos/dev_ws/install/torcs_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rtos/dev_ws/install/torcs_client/lib/python3.8/site-packages:/home/rtos/dev_ws/install/torcs_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/torcs_client build --build-base /home/rtos/dev_ws/build/torcs_client/build install --prefix /home/rtos/dev_ws/install/torcs_client --record /home/rtos/dev_ws/build/torcs_client/install.log --single-version-externally-managed

@@ -1,0 +1,1 @@
+Invoking command in '/home/rtos/dev_ws/build/torcs_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rtos/dev_ws/src/torcs_interfaces -DCMAKE_INSTALL_PREFIX=/home/rtos/dev_ws/install/torcs_interfaces
