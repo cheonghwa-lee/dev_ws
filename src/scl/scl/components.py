@@ -84,6 +84,8 @@ class Component(Node):
                 port.set_channel(channel)
                 port.set_namespace(link.dst.parent.get_namespace())
                 port.attach()
+                # if link.channel == "" # haya-rate
+                # port.set_rate_constraint(10)
                 if not channel in self._stream_output_ports.keys():
                     self._stream_output_ports[channel] = []
                 self._stream_output_ports[channel].append(port)
@@ -121,7 +123,8 @@ class Component(Node):
         self._event_output_ports[event].trigger()
 
     def trigger_modechange(self, factory, event):
-        print(f"trigger_modechange({factory}, {event})")
+        # print(f"trigger_modechange({factory}, {event})")
+        self.get_logger().info(f'trigger modechange({factory}, {event})')
         self._mode_output_ports[factory].trigger(event)
 
     def setup(self):
@@ -181,6 +184,7 @@ class FusionOperator(Component):
         correlation = int(fusion_rule["correlation"])
         self._set_fusion_rule(m_ports, o_ports,
                               o_ports_threshhold, correlation)
+                              
     def _get_ports_from_key(self, ports):
         new_ports = []
         for port in ports:
@@ -196,38 +200,41 @@ class FusionOperator(Component):
     def _check_and_fusion(self, msg, channel):
         # print("=====================================")
         # print("check_and_fusion: ", channel)
-        msg_decoded = json.loads(msg.body)
-        msg_converted = convert_dictionary_to_ros_message(self._stream_input_ports[channel][0].get_msg_type(), msg_decoded)
-        for c, queue in self._queues_for_each_input_port.items():
-            index = 0
-            new_queue = []
-            for item in queue:
-                time_exec_ms = (self.get_clock().now().nanoseconds - item["time"]) / 1000000
-                if item["freshness"] == None or item["freshness"] == 0 or item["freshness"] > time_exec_ms:
-                    new_queue.append(item)
-                else:
-                    self.get_logger.warn('{}ms exceeded(constraint: {}ms, cur: {}ms'.format(time_exec_ms - item["freshness"], item["freshness"], time_exec_ms))
-                index = index + 1
-            self._queues_for_each_input_port[c] = new_queue
-        self._queues_for_each_input_port[channel].append({"message": msg_converted, "time": Time.from_msg(msg.header.stamp).nanoseconds, "freshness": msg.freshness})
-        valid_input_data = self._find_valid_input_data(self._fusion_rule, self._queues_for_each_input_port)
-        if valid_input_data:
-            # print(valid_input_data)
-            data_encoded = json.dumps(valid_input_data)
-            
-        else:
-            # print("==============empty data===============")
-            return
-            # empty_input_data = {}
-            # for c in self._queues_for_each_input_port.keys():
-            #     empty_input_data[c] = None
-            # data_encoded = json.dumps(empty_input_data)
+        try:
+            msg_decoded = json.loads(msg.body)
+            msg_converted = convert_dictionary_to_ros_message(self._stream_input_ports[channel][0].get_msg_type(), msg_decoded)
+            for c, queue in self._queues_for_each_input_port.items():
+                index = 0
+                new_queue = []
+                for item in queue:
+                    time_exec_ms = (self.get_clock().now().nanoseconds - item["time"]) / 1000000
+                    if item["freshness"] == None or item["freshness"] == 0 or item["freshness"] > time_exec_ms:
+                        new_queue.append(item)
+                    else:
+                        self.get_logger.warn('{}ms exceeded(constraint: {}ms, cur: {}ms'.format(time_exec_ms - item["freshness"], item["freshness"], time_exec_ms))
+                    index = index + 1
+                self._queues_for_each_input_port[c] = new_queue
+            self._queues_for_each_input_port[channel].append({"message": msg_converted, "time": Time.from_msg(msg.header.stamp).nanoseconds, "freshness": msg.freshness})
+            valid_input_data = self._find_valid_input_data(self._fusion_rule, self._queues_for_each_input_port)
+            if valid_input_data:
+                # print(valid_input_data)
+                data_encoded = json.dumps(valid_input_data)
+                
+            else:
+                # print("==============empty data===============")
+                return
+                # empty_input_data = {}
+                # for c in self._queues_for_each_input_port.keys():
+                #     empty_input_data[c] = None
+                # data_encoded = json.dumps(empty_input_data)
 
-        new_msg = String()
-        new_msg.data = data_encoded
-        for port in self._stream_output_ports:
-            port.write(new_msg)
-        # print("================{}================".format(valid_input_data))
+            new_msg = String()
+            new_msg.data = data_encoded
+            for port in self._stream_output_ports:
+                port.write(new_msg)
+            # print("================{}================".format(valid_input_data))
+        except Exception as e:
+            pass
     def _find_valid_input_data(self, fusion_rule, queues_for_each_input_port):
         # print("FIND VALID INPUT DATA")
         index_list = [None] * len(queues_for_each_input_port.keys())

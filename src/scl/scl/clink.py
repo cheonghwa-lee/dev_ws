@@ -15,8 +15,12 @@ class ModeChangeInputPort:
     def _mode_change_callback(self, msg):
         # print(f"mode change callback: {msg.data} (current mode: {self._component.get_current_mode()})")
         if self._component.get_current_mode() != msg.data:
-            self._component.get_logger().info("Change mode {} => {}".format(self._component.get_current_mode(), msg.data))
+            # self._component.get_logger().info("Change mode {} => {}".format(self._component.get_current_mode(), msg.data))
             self._component.set_current_mode(msg.data)
+            if self._component.get_current_mode() == self._component.mode:
+                self._component.get_logger().info("ACTIVATE")
+            else:
+                self._component.get_logger().info("DEACTIVATE")
         else:
             # print("what the fuck")
             pass

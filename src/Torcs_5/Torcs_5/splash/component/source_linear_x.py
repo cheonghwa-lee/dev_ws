@@ -22,6 +22,7 @@ class SourceLinearX(Component, metaclass=Singleton):
     
     def torcs_speed_callback(self, msg):
         linear_x = msg.twist.linear.x
+        # print(linear_x)
         new_msg = Float32()
         new_msg.data = linear_x
         self.write("source_x", new_msg)

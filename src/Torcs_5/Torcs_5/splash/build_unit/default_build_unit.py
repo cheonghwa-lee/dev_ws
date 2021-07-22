@@ -22,6 +22,8 @@ from ..component.fusion_1 import Fusion1
 
 from ..stream_port import *
 
+from scl.channel import StreamInputPort, StreamOutputPort # haya-rate
+
 class DefaultBuildUnit(BuildUnit):
     def __init__(self):
         super().__init__()
@@ -78,6 +80,7 @@ class DefaultBuildUnit(BuildUnit):
         source_angle_z.set_links(links=[Link(StreamPort2(), StreamPort6(), "source_theta")])
         source_angle_z.set_build_unit(self)
         source_angle_z.setup()
+        # source_angle_z.set_rate_constraint(10) # haya-rate
         self.components.append(source_angle_z)
         
         fusion_1 = Fusion1()

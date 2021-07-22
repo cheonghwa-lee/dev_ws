@@ -8,13 +8,14 @@ import json
 from rclpy.time import Time
 from .exceptions import *
 
-
+import time
 
 class StreamPort():
     def __init__(self, name, parent):
         self.name = name
         self.parent = parent
         self._namespace = None
+        self.tlqkf_prev = 0
 
     def get_channel(self):
         return self._channel
@@ -71,14 +72,18 @@ class StreamInputPort(StreamPort):
                     self.get_logger.warn('{}ms exceeded(constraint: {}ms, cur: {}ms'.format(time_exec_ms - msg.freshness, msg.freshness, time_exec_ms))
             self.msg_list.append(msg)
             msg_decoded = json.loads(msg.body)
-            msg_converted = convert_dictionary_to_ros_message(self._msg_type, msg_decoded)
+            msg_converted = convert_dictionary_to_ros_message(self._msg_type, msg_decoded) # haya-rate
+            # print("1"*100, msg_converted , type(msg_converted))
             if self._args:
                 self._callback(msg, self._args[0])
             else:
                 if self.from_fusion:
+                    # print("!"*10, "msg_converted:", msg_converted ,"type(msg_converted): ", type(msg_converted), "msg_converted.data: ", msg_converted.data, "type(msg_converted.data): ", type(msg_converted.data))
                     # self.parent.get_logger().info("{}".format(msg_converted))
-                    msg_obj = self.FusionedObj(json.loads(msg_converted.data))
+                    msg_obj = self.FusionedObj(json.loads(msg_converted.data)) # haya-rate
+                    # msg_obj = self.FusionedObj(json.loads(msg_converted))
                     self._callback(msg_obj)
+                    # pass # haya-rate
                 else:
                     self._callback(msg_converted)
             self.msg_list.pop(0)
@@ -94,9 +99,9 @@ class StreamOutputPort(StreamPort):
         self._topic = self._namespace + "/" + self._channel if self._namespace else self._channel
         self._publisher = self.parent.create_publisher(
             SplashMessage, self._topic, 1)
-        if self._rate_constraint > 0:
-            self._rate_controller = RateController(self)
-            self._rate_controller.exception = FreshnessConstraintViolationException
+        # if self._rate_constraint > 0: # haya-rate
+        self._rate_controller = RateController(self)
+        self._rate_controller.exception = FreshnessConstraintViolationException
 
     def set_rate_constraint(self, rate_constraint):
         self._rate_constraint = rate_constraint
@@ -118,10 +123,24 @@ class StreamOutputPort(StreamPort):
                 if(source_msg.freshness):
                     msg_splash.freshness = source_msg.freshness
             msg_splash.body = json.dumps(convert_ros_message_to_dictionary(msg))
+            # print(msg_splash.header.frame_id)
             if self._rate_constraint > 0:
                 self._rate_controller.push(msg_splash)
             else:
+                # print("tlqkf"*10)
+                # print(self.name)
+                # if self.name == "stream_port_2":
+                #     tlqkf = time.time()
+                #     print("time diff: ", tlqkf - self.tlqkf_prev)
                 self._publisher.publish(msg_splash)
+                # if self.name == "stream_port_2":
+                #     self.tlqkf_prev = tlqkf
+
+            # if self._rate_constraint > 0:
+            #     self._rate_controller.push(msg_splash)
+            # else:
+            #     self._publisher.publish(msg_splash)
+
         else:
             pass
 

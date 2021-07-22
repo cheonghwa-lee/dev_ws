@@ -22,14 +22,14 @@ class SinkSteer(Component, metaclass=Singleton):
         angle_z_command = msg.data
         steering_command = angle_z_command
 
-        if steering_command > 1.0:
-            steering = 1.0
-        elif steering_command < -1.0:
-            steering = -1.0
-        else:
-            steering = steering_command
+        # if steering_command > 1.0:
+        #     steering = 1.0
+        # elif steering_command < -1.0:
+        #     steering = -1.0
+        # else:
+        #     steering = steering_command
         
-        # steering = steering_command
+        steering = steering_command
 
         new_msg = Float32()
         new_msg.data = steering

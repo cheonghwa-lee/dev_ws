@@ -22,6 +22,14 @@ class SourceDistanceMid(Component, metaclass=Singleton):
     
     def torcs_sensor_callback(self, msg):
         dist_middle = msg.dist_to_middle
+        dist_raced = msg.dist_raced
+        # dist_from_start = msg.dist_from_start
+        track_pos = msg.track_pos
+        rpm = msg.rpm
+        damage = msg.damage
+        wheel_spin_vel = msg.wheel_spin_vel
+        # print("!#!#", dist_raced, track_pos, rpm, damage, wheel_spin_vel)
+
         # self.get_logger().info("dist_middle: {}".format(dist_middle))
         dist_left = msg.dist_to_left
         dist_right = msg.dist_to_right

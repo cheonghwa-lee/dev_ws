@@ -6,6 +6,14 @@ def main():
 
     torcsClient = TORCSClient()
     torcsClient.connect()
+    print(torcsClient.speed)
+    print(torcsClient.speed)
+    print(torcsClient.speed)
+    print(torcsClient.speed)
+    print(torcsClient.speed)
+    print(torcsClient.speed)
+    print(torcsClient.speed)
+    
     rate = torcsClient.create_rate(100)
     while rclpy.ok:    
         torcsClient.update()
